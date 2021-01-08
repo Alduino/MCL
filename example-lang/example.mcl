@@ -1,0 +1,65 @@
+// note that names of variables and functions are by default mangled,
+// to disable this add the #[expose] decorator
+
+var init_timer: int = 20 * 30 // 5 minutes
+var countdown_start: int = 20 * 11 // 10 second countdown
+
+var ticks_left: int = init_timer
+
+#[expose]
+var game_running: int
+
+// internally these are tags added to the entity, which is selected when used
+#[expose] var player_one: entity
+#[expose] var player_two: entity
+var swap_marker: entity
+
+fn swap() {
+    say(to=PLAYERS, "Swapping!")
+
+    // summon an armor stand at player_one as temp
+    execute(at=player_one) {
+        // must be a global variable as it is used outside of this function
+        swap_marker = summon("armor_stand", marker=true)
+    }
+
+    // teleport player one to player two
+    execute(at=player_two) { teleport(player_one, <~, ~, ~>) }
+
+    // teleport player two to swap marker
+    execute(at=swap_marker) { teleport(player_two, <~, ~, ~>) }
+
+    kill(swap_marker)
+}
+
+#[tick]
+fn tick() {
+    if (game_running == 1) {
+        ticks_left = ticks_left - 1
+
+        if (ticks_left < countdown_start) {
+            var ticks_left_mod: int = ticks_left % 20
+            if (ticks_left_mod < 1) {
+                say(to=PLAYERS, "Swapping in ", ticks_left / 20, "s")
+            }
+        }
+
+        if (ticks_left < 1) {
+            ticks_left = init_timer
+            swap()
+        }
+    }
+}
+
+#[setup]
+fn setup() {
+    say(to=PLAYERS, "Run /tag [PLAYER NAME] player_one on one player")
+    say(to=PLAYERS, "and /tag [PLAYER NAME] player_two on the other.")
+    say(to=PLAYERS, "Then set the value scoreboard for player game_running to 1 to start.")
+    say(to=PLAYERS, "Oh and hi, ", RANDOM_PLAYER, "!")
+}
+
+#[cleanup]
+fn cleanup() {
+    say(to=PLAYERS, "Unloading")
+}

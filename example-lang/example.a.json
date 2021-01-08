@@ -1,0 +1,742 @@
+{
+  "type": "block",
+  "statements": [
+    {
+      "type": "VariableInit",
+      "decorators": [],
+      "name": {
+        "type": "identifier",
+        "value": "init_timer"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "int"
+      },
+      "value": {
+        "type": "Maths",
+        "left": {
+          "type": "int",
+          "value": 20
+        },
+        "operation": 2,
+        "right": {
+          "type": "int",
+          "value": 30
+        }
+      }
+    },
+    {
+      "type": "VariableInit",
+      "decorators": [],
+      "name": {
+        "type": "identifier",
+        "value": "countdown_start"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "int"
+      },
+      "value": {
+        "type": "Maths",
+        "left": {
+          "type": "int",
+          "value": 20
+        },
+        "operation": 2,
+        "right": {
+          "type": "int",
+          "value": 11
+        }
+      }
+    },
+    {
+      "type": "VariableInit",
+      "decorators": [],
+      "name": {
+        "type": "identifier",
+        "value": "ticks_left"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "int"
+      },
+      "value": {
+        "type": "identifier",
+        "value": "init_timer"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "decorators": [
+        {
+          "type": "identifier",
+          "value": "expose"
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "game_running"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "int"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "decorators": [
+        {
+          "type": "identifier",
+          "value": "expose"
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "player_one"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "entity"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "decorators": [
+        {
+          "type": "identifier",
+          "value": "expose"
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "player_two"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "entity"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "decorators": [],
+      "name": {
+        "type": "identifier",
+        "value": "swap_marker"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "entity"
+      }
+    },
+    {
+      "type": "FunctionDeclaration",
+      "decorators": [],
+      "name": {
+        "type": "identifier",
+        "value": "swap"
+      },
+      "block": {
+        "type": "block",
+        "statements": [
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "say"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "to": {
+                  "type": "identifier",
+                  "value": "PLAYERS"
+                }
+              },
+              "positional": [
+                {
+                  "type": "string",
+                  "value": "Swapping!"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "execute"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "at": {
+                  "type": "identifier",
+                  "value": "player_one"
+                }
+              },
+              "positional": [
+                {
+                  "type": "block",
+                  "statements": [
+                    {
+                      "type": "Assignment",
+                      "name": {
+                        "type": "identifier",
+                        "value": "swap_marker"
+                      },
+                      "value": {
+                        "type": "FunctionCall",
+                        "name": {
+                          "type": "identifier",
+                          "value": "summon"
+                        },
+                        "args": {
+                          "type": "ArgumentList",
+                          "named": {
+                            "marker": {
+                              "type": "identifier",
+                              "value": "true"
+                            }
+                          },
+                          "positional": [
+                            {
+                              "type": "string",
+                              "value": "armor_stand"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "execute"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "at": {
+                  "type": "identifier",
+                  "value": "player_two"
+                }
+              },
+              "positional": [
+                {
+                  "type": "block",
+                  "statements": [
+                    {
+                      "type": "FunctionCall",
+                      "name": {
+                        "type": "identifier",
+                        "value": "teleport"
+                      },
+                      "args": {
+                        "type": "ArgumentList",
+                        "named": {},
+                        "positional": [
+                          {
+                            "type": "identifier",
+                            "value": "player_one"
+                          },
+                          {
+                            "type": "Coordinate",
+                            "x": {
+                              "type": 1,
+                              "value": 0
+                            },
+                            "y": {
+                              "type": 1,
+                              "value": 0
+                            },
+                            "z": {
+                              "type": 1,
+                              "value": 0
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "execute"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "at": {
+                  "type": "identifier",
+                  "value": "swap_marker"
+                }
+              },
+              "positional": [
+                {
+                  "type": "block",
+                  "statements": [
+                    {
+                      "type": "FunctionCall",
+                      "name": {
+                        "type": "identifier",
+                        "value": "teleport"
+                      },
+                      "args": {
+                        "type": "ArgumentList",
+                        "named": {},
+                        "positional": [
+                          {
+                            "type": "identifier",
+                            "value": "player_two"
+                          },
+                          {
+                            "type": "Coordinate",
+                            "x": {
+                              "type": 1,
+                              "value": 0
+                            },
+                            "y": {
+                              "type": 1,
+                              "value": 0
+                            },
+                            "z": {
+                              "type": 1,
+                              "value": 0
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "kill"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "swap_marker"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FunctionDeclaration",
+      "decorators": [
+        {
+          "type": "identifier",
+          "value": "tick"
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "tick"
+      },
+      "block": {
+        "type": "block",
+        "statements": [
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "if"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "Comparison",
+                  "left": {
+                    "type": "identifier",
+                    "value": "game_running"
+                  },
+                  "comparison": 1,
+                  "right": {
+                    "type": "int",
+                    "value": 1
+                  }
+                },
+                {
+                  "type": "block",
+                  "statements": [
+                    {
+                      "type": "Assignment",
+                      "name": {
+                        "type": "identifier",
+                        "value": "ticks_left"
+                      },
+                      "value": {
+                        "type": "Maths",
+                        "left": {
+                          "type": "identifier",
+                          "value": "ticks_left"
+                        },
+                        "operation": 1,
+                        "right": {
+                          "type": "int",
+                          "value": 1
+                        }
+                      }
+                    },
+                    {
+                      "type": "FunctionCall",
+                      "name": {
+                        "type": "identifier",
+                        "value": "if"
+                      },
+                      "args": {
+                        "type": "ArgumentList",
+                        "named": {},
+                        "positional": [
+                          {
+                            "type": "Comparison",
+                            "left": {
+                              "type": "identifier",
+                              "value": "ticks_left"
+                            },
+                            "comparison": 6,
+                            "right": {
+                              "type": "identifier",
+                              "value": "countdown_start"
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "statements": [
+                              {
+                                "type": "VariableInit",
+                                "decorators": [],
+                                "name": {
+                                  "type": "identifier",
+                                  "value": "ticks_left_mod"
+                                },
+                                "varType": {
+                                  "type": "identifier",
+                                  "value": "int"
+                                },
+                                "value": {
+                                  "type": "Maths",
+                                  "left": {
+                                    "type": "identifier",
+                                    "value": "ticks_left"
+                                  },
+                                  "operation": 4,
+                                  "right": {
+                                    "type": "int",
+                                    "value": 20
+                                  }
+                                }
+                              },
+                              {
+                                "type": "FunctionCall",
+                                "name": {
+                                  "type": "identifier",
+                                  "value": "if"
+                                },
+                                "args": {
+                                  "type": "ArgumentList",
+                                  "named": {},
+                                  "positional": [
+                                    {
+                                      "type": "Comparison",
+                                      "left": {
+                                        "type": "identifier",
+                                        "value": "ticks_left_mod"
+                                      },
+                                      "comparison": 6,
+                                      "right": {
+                                        "type": "int",
+                                        "value": 1
+                                      }
+                                    },
+                                    {
+                                      "type": "block",
+                                      "statements": [
+                                        {
+                                          "type": "FunctionCall",
+                                          "name": {
+                                            "type": "identifier",
+                                            "value": "say"
+                                          },
+                                          "args": {
+                                            "type": "ArgumentList",
+                                            "named": {
+                                              "to": {
+                                                "type": "identifier",
+                                                "value": "PLAYERS"
+                                              }
+                                            },
+                                            "positional": [
+                                              {
+                                                "type": "string",
+                                                "value": "Swapping in "
+                                              },
+                                              {
+                                                "type": "Maths",
+                                                "left": {
+                                                  "type": "identifier",
+                                                  "value": "ticks_left"
+                                                },
+                                                "operation": 3,
+                                                "right": {
+                                                  "type": "int",
+                                                  "value": 20
+                                                }
+                                              },
+                                              {
+                                                "type": "string",
+                                                "value": "s"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "FunctionCall",
+                      "name": {
+                        "type": "identifier",
+                        "value": "if"
+                      },
+                      "args": {
+                        "type": "ArgumentList",
+                        "named": {},
+                        "positional": [
+                          {
+                            "type": "Comparison",
+                            "left": {
+                              "type": "identifier",
+                              "value": "ticks_left"
+                            },
+                            "comparison": 6,
+                            "right": {
+                              "type": "int",
+                              "value": 1
+                            }
+                          },
+                          {
+                            "type": "block",
+                            "statements": [
+                              {
+                                "type": "Assignment",
+                                "name": {
+                                  "type": "identifier",
+                                  "value": "ticks_left"
+                                },
+                                "value": {
+                                  "type": "identifier",
+                                  "value": "init_timer"
+                                }
+                              },
+                              {
+                                "type": "FunctionCall",
+                                "name": {
+                                  "type": "identifier",
+                                  "value": "swap"
+                                },
+                                "args": {
+                                  "type": "ArgumentList",
+                                  "named": {},
+                                  "positional": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FunctionDeclaration",
+      "decorators": [
+        {
+          "type": "identifier",
+          "value": "setup"
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "setup"
+      },
+      "block": {
+        "type": "block",
+        "statements": [
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "say"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "to": {
+                  "type": "identifier",
+                  "value": "PLAYERS"
+                }
+              },
+              "positional": [
+                {
+                  "type": "string",
+                  "value": "Run /tag [PLAYER NAME] player_one on one player"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "say"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "to": {
+                  "type": "identifier",
+                  "value": "PLAYERS"
+                }
+              },
+              "positional": [
+                {
+                  "type": "string",
+                  "value": "and /tag [PLAYER NAME] player_two on the other."
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "say"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "to": {
+                  "type": "identifier",
+                  "value": "PLAYERS"
+                }
+              },
+              "positional": [
+                {
+                  "type": "string",
+                  "value": "Then set the value scoreboard for player game_running to 1 to start."
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "say"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "to": {
+                  "type": "identifier",
+                  "value": "PLAYERS"
+                }
+              },
+              "positional": [
+                {
+                  "type": "string",
+                  "value": "Oh and hi, "
+                },
+                {
+                  "type": "identifier",
+                  "value": "RANDOM_PLAYER"
+                },
+                {
+                  "type": "string",
+                  "value": "!"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "FunctionDeclaration",
+      "decorators": [
+        {
+          "type": "identifier",
+          "value": "cleanup"
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "cleanup"
+      },
+      "block": {
+        "type": "block",
+        "statements": [
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "say"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {
+                "to": {
+                  "type": "identifier",
+                  "value": "PLAYERS"
+                }
+              },
+              "positional": [
+                {
+                  "type": "string",
+                  "value": "Unloading"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

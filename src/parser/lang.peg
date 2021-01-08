@@ -1,0 +1,47 @@
+MainProgram := prog=Program $
+Program := x={y={_? statement=Statement _B?} | _B}*
+
+Block := '{' _B? program=Program '}'
+
+Expression := sub={'\(' _? val=Expression _? '\)'} | Comparison | Maths | Identifier | Int | String | Coordinate
+Statement := VariableInit | VariableDeclaration | FunctionDeclaration | FunctionCall | Assignment
+
+Maths := left=Expression _? op={'\+' | '-' | '\*' | '\/' | '\%'} _? right=Expression
+
+CoordinateValue := relative={'~' _? pos=Int?} | local={'^' _? pos=Int?} | absolute=Int
+Coordinate := '<' _? x=CoordinateValue _? ',' _? y=CoordinateValue _? ',' _? z=CoordinateValue _? '>'
+
+IdentifierList := list={val=Identifier _? ',' _?}* _? last=Identifier
+Decorator := '#\[' items=IdentifierList '\]'
+DecoratorPart := decorator=Decorator _B?
+
+VariableDeclaration := decorator=DecoratorPart? 'var' _ name=Identifier _? ':' _? type=Identifier
+VariableInit := decl=VariableDeclaration _? '=' _? value={FunctionCall | Expression}
+Assignment := variable=Identifier _? '=' _? value={FunctionCall | Expression}
+
+// todo: support arguments
+FunctionDeclaration := decorator=DecoratorPart? 'fn' _ name=Identifier _? '\(\)' _B? block=Block
+
+PositionalArgument := Expression | Block
+NamedArgument := name=Identifier _? '=' _? value={Expression | Block}
+Argument := NamedArgument | PositionalArgument
+ArgumentsList := list={arg=Argument _? ',' _?}* _? last=Argument?
+FunctionCall := fn=Identifier _? '\(' _? args=ArgumentsList _? '\)' _B? lastFnArg=Block?
+
+Compare := CompareEqual | CompareNotEqual | CompareGreaterThan | CompareLessThan | CompareGreaterThanOrEqual | CompareLessThanOrEqual
+Comparison := left=Expression _? comparison=Compare _? right=Expression
+
+CompareEqual := '=='
+CompareNotEqual := '!='
+CompareGreaterThan := '>'
+CompareLessThan := '<'
+CompareGreaterThanOrEqual := '>='
+CompareLessThanOrEqual := '<='
+
+String := value='"(\\.|[^"\\])*"'
+Identifier := value='[a-zA-Z][a-zA-Z0-9_]*'
+Int := value='[0-9]+'
+
+// whitespace
+_ := _ws='\s+'
+_B := _ws='(?:\s+|(?:\n)|(?:\/\/.*(?:\n|$)))+'

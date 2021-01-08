@@ -1,0 +1,5314 @@
+{
+  "namespace:__root": [
+    {
+      "type": "comment",
+      "value": "Begin function __root, child of the root function"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 0
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 1
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 1
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 2
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "600",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 2
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 3
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 3
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 4
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "220",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 4
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 5
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 5
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 6
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"game_running\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "game_running",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "namespace:swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh": [
+    {
+      "type": "comment",
+      "value": "Begin function swap, child of __root"
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Swapping!",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "at",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "function",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "namespace:command_execute_qmmxythu43ukaq37vhvazax5my2dtjmn",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "at",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "function",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "namespace:command_execute_2om2oie3hsildrwjrq24suqpp3hpea22",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "at",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "syhru7sjcms54sbs2hbfi3gmw4nbugqc",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "function",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "namespace:command_execute_xx4ht262arp5pzb43gxjn5sas4agdona",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "syhru7sjcms54sbs2hbfi3gmw4nbugqc",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:command_execute_qmmxythu43ukaq37vhvazax5my2dtjmn": [
+    {
+      "type": "comment",
+      "value": "Begin function command_execute, child of swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh"
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:command_execute_2om2oie3hsildrwjrq24suqpp3hpea22": [
+    {
+      "type": "comment",
+      "value": "Begin function command_execute, child of swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh"
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:command_execute_xx4ht262arp5pzb43gxjn5sas4agdona": [
+    {
+      "type": "comment",
+      "value": "Begin function command_execute, child of swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh"
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:tick_5hwthuggk4vhhrdspscuuc4jjqb3mls3": [
+    {
+      "type": "comment",
+      "value": "Begin function tick, child of __root"
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between game_running and 1"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 6
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 7
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "1",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 7
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 8
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "game_running",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler, child of tick_5hwthuggk4vhhrdspscuuc4jjqb3mls3"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 8
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 9
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 9
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 10
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "1",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "-=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between ticks_left and countdown_start"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 10
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 11
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "<",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__if_handler_2hny2t4fhmj4hv5xguxh3s2dcc76rzj7",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between ticks_left and 1"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 18
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 19
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "1",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 19
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 20
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "<",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__if_handler_blu3offmhmk5emm7muq5zc2yail5qm25",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__if_handler_2hny2t4fhmj4hv5xguxh3s2dcc76rzj7": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 11
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 12
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 12
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 13
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 13
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 14
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "20",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "%=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between ticks_left_mod and 1"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 14
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 15
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "1",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 15
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 16
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "<",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__if_handler__if_handler_uh3d5heyattby73fh2cwgrbzrw3ryehn",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__if_handler__if_handler_uh3d5heyattby73fh2cwgrbzrw3ryehn": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__if_handler__if_handler, child of tick__if_handler__if_handler_2hny2t4fhmj4hv5xguxh3s2dcc76rzj7"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 16
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 17
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 17
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 18
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "20",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "/=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Swapping in ",
+                    "requireQuotes": true
+                  }
+                }
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "score": {
+                    "type": "nbt.object",
+                    "children": {
+                      "name": {
+                        "type": "nbt.string",
+                        "value": "@e[tag=tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf,limit=1]",
+                        "requireQuotes": true
+                      },
+                      "objective": {
+                        "type": "nbt.string",
+                        "value": "value",
+                        "requireQuotes": true
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "s",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__if_handler_blu3offmhmk5emm7muq5zc2yail5qm25": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij"
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "function",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:setup_aecqas5ra64x3bkygicb4und24aojlcb": [
+    {
+      "type": "comment",
+      "value": "Begin function setup, child of __root"
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Run /tag [PLAYER NAME] player_one on one player",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "and /tag [PLAYER NAME] player_two on the other.",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Then set the value scoreboard for player game_running to 1 to start.",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Oh and hi, ",
+                    "requireQuotes": true
+                  }
+                }
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "selector": {
+                    "type": "nbt.string",
+                    "value": "@r",
+                    "requireQuotes": true
+                  }
+                }
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "!",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:cleanup_xjhypfsfmxr5srxjas3rce7jbrqejcjp": [
+    {
+      "type": "comment",
+      "value": "Begin function cleanup, child of __root"
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Unloading",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "comment",
+      "value": "(No variables to clean up)"
+    }
+  ],
+  "namespace:__setup": [
+    {
+      "type": "comment",
+      "value": "Begin function __setup, child of the root function"
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "objectives",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "add",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "dummy",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 20
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 21
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__is_running\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__is_running",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "function",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:__root",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "function",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:setup_aecqas5ra64x3bkygicb4und24aojlcb",
+            "requireQuotes": false
+          }
+        }
+      ]
+    }
+  ],
+  "namespace:__tick": [
+    {
+      "type": "comment",
+      "value": "Begin function __tick, child of the root function"
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "as",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__is_running",
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "function",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "namespace:tick_5hwthuggk4vhhrdspscuuc4jjqb3mls3",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:__cleanup": [
+    {
+      "type": "comment",
+      "value": "Begin function __cleanup, child of the root function"
+    },
+    {
+      "type": "comment",
+      "value": "This function is run when the datapack is unloaded, and cleans up any global variables (and runs cleanup hooks)"
+    },
+    {
+      "type": "command",
+      "name": "function",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:cleanup_xjhypfsfmxr5srxjas3rce7jbrqejcjp",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "game_running",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "syhru7sjcms54sbs2hbfi3gmw4nbugqc",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "objectives",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "remove",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__is_running",
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
