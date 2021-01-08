@@ -1,3 +1,5 @@
+No proper documentation yet, this is still very much in its early stages.
+
 ## Progress
 
 - [x] **Stage 1**: Language parser - parses the MCL language and generates a JSON file for the preprocessor *working 
