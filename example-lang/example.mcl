@@ -20,7 +20,7 @@ fn swap() {
     // summon an armor stand at player_one as temp
     execute(at=player_one) {
         // must be a global variable as it is used outside of this function
-        swap_marker = summon("armor_stand", marker=true)
+        swap_marker = summon("armor_stand", marker=1)
     }
 
     // teleport player one to player two
