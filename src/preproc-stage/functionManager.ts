@@ -8,11 +8,14 @@ export default class FunctionManager {
     private currentFunction: string;
 
     private readonly functions: Map<string, (Command | Comment)[]> = new Map();
+    private readonly functionVars: Map<string, VariableInformation> = new Map();
     private readonly functionMapping: Map<string, string> = new Map();
 
     private readonly globalScope: VariableInformation[] = [];
     private parentScopes: VariableInformation[][] = [];
     private currentScope: VariableInformation[] = [];
+
+    private useParent = false;
 
     begin(description: string, name?: string) {
         if (!name) {
@@ -70,7 +73,7 @@ export default class FunctionManager {
 
     getCurrentScope() {
         if (this.inGlobalScope()) return this.getGlobalScope();
-        return this.currentScope;
+        return this.useParent ? (this.parentScopes[0] ?? this.globalScope) : this.currentScope;
     }
 
     getGlobalScope() {
@@ -82,7 +85,7 @@ export default class FunctionManager {
     }
 
     inGlobalScope() {
-        return this.parentScopes.length <= 1;
+        return this.useParent ? this.parentScopes.length <= 2 : this.parentScopes.length <= 1;
     }
 
     getAll(): ReadonlyMap<string, (Command | Comment)[]> {
@@ -95,5 +98,17 @@ export default class FunctionManager {
 
     getFunctionDesc() {
         return Array.from(this.functionMapping.entries()).find(v => v[1] === this.currentFunction)?.[0] || "the root function";
+    }
+
+    useParentScope(force: boolean = true) {
+        this.useParent = force;
+    }
+
+    setFunctionVariable(name: string, variable: VariableInformation) {
+        this.functionVars.set(name, variable);
+    }
+
+    getFunctionVariable(name: string) {
+        return this.functionVars.get(name);
     }
 }

@@ -38,7 +38,7 @@ const nativeStd: {
             }
         }
 
-        const functionName = processor._handleBlock("command_execute", null, block);
+        const {name: functionName, result} = processor._handleBlock("command_execute", null, block);
 
         argus.push(new Nbt(new NbtString("run")));
         argus.push(new Command("function", [
@@ -48,7 +48,7 @@ const nativeStd: {
         processor.fn.push(new Command("execute", argus));
 
         // todo return last result
-        return null;
+        return result;
     },
 
     kill(processor: Processor, args: ArgumentList) {

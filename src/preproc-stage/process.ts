@@ -235,39 +235,51 @@ export class Processor {
 
     _handleBlock(description: string, name: string, {statements}: Block, cleanup = true) {
         const newName = this.fn.begin(description, name);
+        let lastStatementResult: VariableInformation = null;
 
-        statements.forEach(this._handleStatement.bind(this));
+        for (let i = 0; i < statements.length; i++) {
+            if (i === statements.length - 1) {
+                // the last statement's result is used as the return value, so it needs to be stored in a scope that
+                // won't be cleaned up too early. so we store it in the parent scope, as it is the function using the
+                // value. unfortunately this has the side effect that any variables created will be stored one level
+                // up even if they don't need to be.
+                this.fn.useParentScope();
+                lastStatementResult = this._handleStatement(statements[i]);
+                this.fn.useParentScope(false);
+            } else {
+                this._handleStatement(statements[i]);
+            }
+        }
+
+        this.fn.setFunctionVariable(newName, lastStatementResult);
 
         if (cleanup) this._cleanup();
 
         this.fn.end();
 
-        return newName;
+        return {
+            name: newName,
+            result: lastStatementResult
+        };
     }
 
-    _handleStatement(statement: Statement) {
+    _handleStatement(statement: Statement): VariableInformation {
         switch (statement.type) {
             case "VariableInit":
-                this._handleVariableInit(statement);
-                break;
+                return this._handleVariableInit(statement);
             case "VariableDeclaration":
-                this._handleVariableDeclaration(statement);
-                break;
+                return this._handleVariableDeclaration(statement);
             case "FunctionDeclaration":
-                this._handleFunctionDeclaration(statement);
-                break;
+                return this._handleFunctionDeclaration(statement);
             case "FunctionCall":
-                this._handleFunctionCall(statement);
-                break;
+                return this._handleFunctionCall(statement);
             case "Assignment":
-                this._handleAssignment(statement);
-                break;
-
+                return this._handleAssignment(statement);
         }
     }
 
-    _handleVariableInit(statement: VariableInit) {
-        this._handleVariableDeclaration({
+    _handleVariableInit(statement: VariableInit): VariableInformation {
+        const variable = this._handleVariableDeclaration({
             ...statement,
             type: "VariableDeclaration"
         });
@@ -277,6 +289,8 @@ export class Processor {
             value: statement.value,
             name: statement.name
         });
+
+        return variable;
     }
 
     _handleVariableDeclaration(statement: VariableDeclaration): VariableInformation {
@@ -311,19 +325,20 @@ export class Processor {
         }
     }
 
-    _handleFunctionDeclaration(statement: FunctionDeclaration) {
-        const name = this._handleBlock(statement.name.value,
+    _handleFunctionDeclaration(statement: FunctionDeclaration): null {
+        const {name} = this._handleBlock(statement.name.value,
             Processor.isExposed(statement) && statement.name.value, statement.block);
 
         if (Processor.hasDecorator(statement, "tick")) this.tickFunctions.push(name);
         if (Processor.hasDecorator(statement, "setup")) this.setupFunctions.push(name);
         if (Processor.hasDecorator(statement, "cleanup")) this.cleanupFunctions.push(name);
+
+        return null;
     }
 
     _handleFunctionCall(statement: FunctionCall) {
         if (hasStdFunc(statement.name.value)) {
-            nativeStd[statement.name.value](this, statement.args);
-            return;
+            return nativeStd[statement.name.value](this, statement.args);
         }
 
         if (this.fn.hasFunctionByDesc(statement.name.value)) {
@@ -333,18 +348,23 @@ export class Processor {
             this.fn.push(new Command("function", [
                 s(`${this.namespace}:${fnName}`)
             ]));
+
+            return this.fn.getFunctionVariable(fnName);
         }
+
+        throw new Error(`Cannot call undefined function ${statement.name.value}`);
     }
 
-    _handleAssignment(statement: Assignment) {
-        const variable = [...this.fn.getGlobalScope(), ...this.fn.getCurrentScope()]
-            .find(v => v.srcName === statement.name.value);
+    _handleAssignment(statement: Assignment): VariableInformation {
+        const variable = this.fn.getVariable(statement.name);
+
+        let result: VariableInformation;
 
         if (statement.value.type === "FunctionCall") {
-            return console.warn("warning: function call assignments are not currently supported");
+            return this._handleFunctionCall(statement.value);
+        } else {
+            result = this._handleExpression(statement.value);
         }
-
-        const result = this._handleExpression(statement.value);
 
         if (variable.type !== result.type) throw new TypeError(`Cannot assign ${result.type} into ${variable.type}`);
 
@@ -361,6 +381,8 @@ export class Processor {
                 s(Processor.valueObjective)
             ]));
         }
+
+        return variable;
     }
 
     _handleExpression(expr: Expression) {
