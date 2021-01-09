@@ -24,7 +24,7 @@ import Comparison, {ComparisonType} from "../parser/ast-structure/Comparison";
 import NbtNumber, {NumberType} from "../pregen-structure/nbt/NbtNumber";
 import Maths, {MathsOperation} from "../parser/ast-structure/Maths";
 
-interface EntityVariableInformation {
+export interface EntityVariableInformation {
     type: "entity";
     srcName: string;
     tag: string;
@@ -34,7 +34,7 @@ interface EntityVariableInformation {
     disableCleanup?: boolean;
 }
 
-interface IntVariableInformation {
+export interface IntVariableInformation {
     type: "int";
     srcName: string;
     score: string;
@@ -600,7 +600,7 @@ export class Processor {
     }
 
     autoNameIncr = 0;
-    private autoName(base: string) {
+    autoName(base: string) {
         return `${this.fn.getFunctionDesc()}_${this.autoNameIncr++}__${base}`;
     }
 }
