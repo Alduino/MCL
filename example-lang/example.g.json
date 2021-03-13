@@ -38,7 +38,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt\"}",
+                "value": "{\"text\":\"init_timer_2j3h4bntj54srlptq3plogow5gtey2st\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -51,7 +51,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+                    "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
                     "requireQuotes": false
                   }
                 ]
@@ -95,7 +95,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand\"}",
+                "value": "{\"text\":\"____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -108,7 +108,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+                    "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
                     "requireQuotes": false
                   }
                 ]
@@ -144,7 +144,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+              "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
               "inverted": false
             },
             {
@@ -205,7 +205,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
               "inverted": false
             },
             {
@@ -244,7 +244,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+              "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
               "inverted": false
             },
             {
@@ -305,7 +305,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4\"}",
+                "value": "{\"text\":\"countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -318,7 +318,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+                    "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
                     "requireQuotes": false
                   }
                 ]
@@ -362,7 +362,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy\"}",
+                "value": "{\"text\":\"____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -375,7 +375,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+                    "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
                     "requireQuotes": false
                   }
                 ]
@@ -411,7 +411,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+              "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
               "inverted": false
             },
             {
@@ -472,7 +472,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+              "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
               "inverted": false
             },
             {
@@ -511,7 +511,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+              "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
               "inverted": false
             },
             {
@@ -572,7 +572,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y\"}",
+                "value": "{\"text\":\"ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -585,7 +585,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+                    "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
                     "requireQuotes": false
                   }
                 ]
@@ -621,7 +621,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -660,7 +660,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
               "inverted": false
             },
             {
@@ -745,7 +745,7 @@
       ]
     }
   ],
-  "namespace:swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh": [
+  "namespace:swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv": [
     {
       "type": "comment",
       "value": "Begin function swap, child of __root"
@@ -835,11 +835,85 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:command_execute_qmmxythu43ukaq37vhvazax5my2dtjmn",
+                "value": "namespace:__swap_2__command_execute_jbr6meyxbj4paqqc2ym7ah42cgm5ijhz",
                 "requireQuotes": false
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tag",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "____swap_2__command_execute_3__summon_armor_stand_heovaxyyt2fiudieb4cjgwktsteehfen",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "add",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
+            "requireQuotes": false
+          }
         }
       ]
     },
@@ -894,7 +968,7 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:command_execute_2om2oie3hsildrwjrq24suqpp3hpea22",
+                "value": "namespace:__swap_4__command_execute_yvhgxeplb6lhbedjwgwfunhywcvn7uhz",
                 "requireQuotes": false
               }
             }
@@ -920,7 +994,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "syhru7sjcms54sbs2hbfi3gmw4nbugqc",
+              "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
               "inverted": false
             },
             {
@@ -953,13 +1027,17 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:command_execute_xx4ht262arp5pzb43gxjn5sas4agdona",
+                "value": "namespace:__swap_5__command_execute_hxep72hu3egezdfmtjna55nefcinvkgy",
                 "requireQuotes": false
               }
             }
           ]
         }
       ]
+    },
+    {
+      "type": "comment",
+      "value": "Variable cleanup"
     },
     {
       "type": "command",
@@ -971,7 +1049,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "syhru7sjcms54sbs2hbfi3gmw4nbugqc",
+              "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
               "inverted": false
             },
             {
@@ -989,6 +1067,69 @@
           ]
         }
       ]
+    }
+  ],
+  "namespace:__swap_2__command_execute_jbr6meyxbj4paqqc2ym7ah42cgm5ijhz": [
+    {
+      "type": "comment",
+      "value": "Begin function __swap_2__command_execute, child of swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 0
+          },
+          "y": {
+            "type": 1,
+            "value": 0
+          },
+          "z": {
+            "type": 1,
+            "value": 0
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "____swap_2__command_execute_3__summon_armor_stand_heovaxyyt2fiudieb4cjgwktsteehfen",
+                    "requireQuotes": true
+                  }
+                ]
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"marker\"}",
+                "requireQuotes": false
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "type": "comment",
@@ -999,10 +1140,54 @@
       "value": "(No variables to clean up)"
     }
   ],
-  "namespace:command_execute_qmmxythu43ukaq37vhvazax5my2dtjmn": [
+  "namespace:__swap_4__command_execute_yvhgxeplb6lhbedjwgwfunhywcvn7uhz": [
     {
       "type": "comment",
-      "value": "Begin function command_execute, child of swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh"
+      "value": "Begin function __swap_4__command_execute, child of swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv"
+    },
+    {
+      "type": "command",
+      "name": "tp",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 0
+          },
+          "y": {
+            "type": 1,
+            "value": 0
+          },
+          "z": {
+            "type": 1,
+            "value": 0
+          }
+        }
+      ]
     },
     {
       "type": "comment",
@@ -1013,10 +1198,54 @@
       "value": "(No variables to clean up)"
     }
   ],
-  "namespace:command_execute_2om2oie3hsildrwjrq24suqpp3hpea22": [
+  "namespace:__swap_5__command_execute_hxep72hu3egezdfmtjna55nefcinvkgy": [
     {
       "type": "comment",
-      "value": "Begin function command_execute, child of swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh"
+      "value": "Begin function __swap_5__command_execute, child of swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv"
+    },
+    {
+      "type": "command",
+      "name": "tp",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 0
+          },
+          "y": {
+            "type": 1,
+            "value": 0
+          },
+          "z": {
+            "type": 1,
+            "value": 0
+          }
+        }
+      ]
     },
     {
       "type": "comment",
@@ -1027,21 +1256,7 @@
       "value": "(No variables to clean up)"
     }
   ],
-  "namespace:command_execute_xx4ht262arp5pzb43gxjn5sas4agdona": [
-    {
-      "type": "comment",
-      "value": "Begin function command_execute, child of swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh"
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
-    }
-  ],
-  "namespace:tick_5hwthuggk4vhhrdspscuuc4jjqb3mls3": [
+  "namespace:tick_udizkzxwh5vwkwpghkx3alugmcsrdmeb": [
     {
       "type": "comment",
       "value": "Begin function tick, child of __root"
@@ -1084,7 +1299,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee\"}",
+                "value": "{\"text\":\"__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1097,7 +1312,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+                    "value": "__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq",
                     "requireQuotes": false
                   }
                 ]
@@ -1133,7 +1348,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+              "value": "__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq",
               "inverted": false
             },
             {
@@ -1202,7 +1417,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg\"}",
+                "value": "{\"text\":\"__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1215,7 +1430,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+                    "value": "__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi",
                     "requireQuotes": false
                   }
                 ]
@@ -1290,7 +1505,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
+              "value": "__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq",
               "inverted": false
             },
             {
@@ -1349,7 +1564,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+                  "value": "__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi",
                   "inverted": false
                 },
                 {
@@ -1412,7 +1627,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
+              "value": "__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi",
               "inverted": false
             },
             {
@@ -1466,7 +1681,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij",
+            "value": "namespace:tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6",
             "requireQuotes": false
           }
         }
@@ -1477,68 +1692,14 @@
       "value": "Variable cleanup"
     },
     {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick_2__comparison_right_qahopfxqf6b2eziwvhhklcubn3dlucee",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick_3__comparison_o2mfpydwfuwqjlo6mkd24tbaqgpbzolg",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
+      "type": "comment",
+      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij": [
+  "namespace:tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler, child of tick_5hwthuggk4vhhrdspscuuc4jjqb3mls3"
+      "value": "Begin function tick__if_handler, child of tick_udizkzxwh5vwkwpghkx3alugmcsrdmeb"
     },
     {
       "type": "command",
@@ -1574,7 +1735,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf\"}",
+                "value": "{\"text\":\"__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1587,7 +1748,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+                    "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
                     "requireQuotes": false
                   }
                 ]
@@ -1631,7 +1792,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs\"}",
+                "value": "{\"text\":\"__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1644,7 +1805,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+                    "value": "__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy",
                     "requireQuotes": false
                   }
                 ]
@@ -1680,7 +1841,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+              "value": "__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy",
               "inverted": false
             },
             {
@@ -1741,7 +1902,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
               "inverted": false
             },
             {
@@ -1780,7 +1941,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -1833,7 +1994,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
               "inverted": false
             },
             {
@@ -1872,7 +2033,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
+              "value": "__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy",
               "inverted": false
             },
             {
@@ -1925,7 +2086,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -1964,7 +2125,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
+              "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
               "inverted": false
             },
             {
@@ -2029,7 +2190,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7\"}",
+                "value": "{\"text\":\"__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2042,7 +2203,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+                    "value": "__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6",
                     "requireQuotes": false
                   }
                 ]
@@ -2078,7 +2239,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -2117,7 +2278,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+              "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
               "inverted": false
             },
             {
@@ -2176,7 +2337,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+                  "value": "__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6",
                   "inverted": false
                 },
                 {
@@ -2239,7 +2400,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
+              "value": "__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6",
               "inverted": false
             },
             {
@@ -2293,7 +2454,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler__if_handler_2hny2t4fhmj4hv5xguxh3s2dcc76rzj7",
+            "value": "namespace:tick__if_handler__if_handler_ozvr65yvdthqhsqghgf3sgqyzgjwu3qx",
             "requireQuotes": false
           }
         }
@@ -2337,7 +2498,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i\"}",
+                "value": "{\"text\":\"__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2350,7 +2511,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+                    "value": "__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d",
                     "requireQuotes": false
                   }
                 ]
@@ -2386,7 +2547,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+              "value": "__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d",
               "inverted": false
             },
             {
@@ -2455,7 +2616,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu\"}",
+                "value": "{\"text\":\"__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2468,7 +2629,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+                    "value": "__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc",
                     "requireQuotes": false
                   }
                 ]
@@ -2504,7 +2665,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -2543,7 +2704,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
+              "value": "__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d",
               "inverted": false
             },
             {
@@ -2602,7 +2763,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+                  "value": "__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc",
                   "inverted": false
                 },
                 {
@@ -2665,7 +2826,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
+              "value": "__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc",
               "inverted": false
             },
             {
@@ -2719,7 +2880,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler__if_handler_blu3offmhmk5emm7muq5zc2yail5qm25",
+            "value": "namespace:tick__if_handler__if_handler_4hlujctdd5yl463gfi5cfc37ya646lma",
             "requireQuotes": false
           }
         }
@@ -2730,155 +2891,14 @@
       "value": "Variable cleanup"
     },
     {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler_4__maths_output_pnhzuc3dyiivnzlj2oc3scfdrypsd7wf",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler_5__constant_int_vahxknjxfkk37yfwy5sa43zs44yizzzs",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler_6__comparison_yra3ikkftdwgphflcnagynxzf2pocfj7",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler_13__comparison_right_znvyouu4dbveoszq4soywe6uzopdxc2i",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler_14__comparison_jlahyhlz4y4a7u5ilm4srijkp4sfbzvu",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
+      "type": "comment",
+      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:tick__if_handler__if_handler_2hny2t4fhmj4hv5xguxh3s2dcc76rzj7": [
+  "namespace:tick__if_handler__if_handler_ozvr65yvdthqhsqghgf3sgqyzgjwu3qx": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij"
+      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6"
     },
     {
       "type": "command",
@@ -2914,7 +2934,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw\"}",
+                "value": "{\"text\":\"ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2927,7 +2947,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+                    "value": "ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt",
                     "requireQuotes": false
                   }
                 ]
@@ -2971,7 +2991,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl\"}",
+                "value": "{\"text\":\"__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2984,7 +3004,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+                    "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
                     "requireQuotes": false
                   }
                 ]
@@ -3028,7 +3048,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl\"}",
+                "value": "{\"text\":\"__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3041,7 +3061,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+                    "value": "__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2",
                     "requireQuotes": false
                   }
                 ]
@@ -3077,7 +3097,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+              "value": "__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2",
               "inverted": false
             },
             {
@@ -3138,7 +3158,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
               "inverted": false
             },
             {
@@ -3177,7 +3197,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -3230,7 +3250,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
               "inverted": false
             },
             {
@@ -3269,7 +3289,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
+              "value": "__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2",
               "inverted": false
             },
             {
@@ -3322,7 +3342,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+              "value": "ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt",
               "inverted": false
             },
             {
@@ -3361,7 +3381,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
+              "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
               "inverted": false
             },
             {
@@ -3426,7 +3446,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h\"}",
+                "value": "{\"text\":\"__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3439,7 +3459,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+                    "value": "__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna",
                     "requireQuotes": false
                   }
                 ]
@@ -3475,7 +3495,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+              "value": "__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna",
               "inverted": false
             },
             {
@@ -3544,7 +3564,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6\"}",
+                "value": "{\"text\":\"__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3557,7 +3577,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+                    "value": "__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc",
                     "requireQuotes": false
                   }
                 ]
@@ -3593,7 +3613,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
+              "value": "ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt",
               "inverted": false
             },
             {
@@ -3632,7 +3652,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
+              "value": "__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna",
               "inverted": false
             },
             {
@@ -3691,7 +3711,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+                  "value": "__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc",
                   "inverted": false
                 },
                 {
@@ -3754,7 +3774,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
+              "value": "__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc",
               "inverted": false
             },
             {
@@ -3808,7 +3828,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler__if_handler__if_handler_uh3d5heyattby73fh2cwgrbzrw3ryehn",
+            "value": "namespace:tick__if_handler__if_handler__if_handler_2tnn6rji6433e7swko3tiksteuhaqsbu",
             "requireQuotes": false
           }
         }
@@ -3819,155 +3839,14 @@
       "value": "Variable cleanup"
     },
     {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "ticks_left_mod_arlabbjnuboym5oq72v2k7hc326nlcjw",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler__if_handler_7__maths_output_3otmsaj7nzhbya7j66vdr4elk5nnmqfl",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler__if_handler_8__constant_int_bbj5cmyrgtw4kdxwkolasbyjgobhm2dl",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler__if_handler_9__comparison_right_3kess3hmbvhbyithyyv53e3ffyotc64h",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler__if_handler_10__comparison_tmamqiyi6bwfnm3pnth4e5rz4mqedib6",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
+      "type": "comment",
+      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:tick__if_handler__if_handler__if_handler_uh3d5heyattby73fh2cwgrbzrw3ryehn": [
+  "namespace:tick__if_handler__if_handler__if_handler_2tnn6rji6433e7swko3tiksteuhaqsbu": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler__if_handler__if_handler, child of tick__if_handler__if_handler_2hny2t4fhmj4hv5xguxh3s2dcc76rzj7"
+      "value": "Begin function tick__if_handler__if_handler__if_handler, child of tick__if_handler__if_handler_ozvr65yvdthqhsqghgf3sgqyzgjwu3qx"
     },
     {
       "type": "command",
@@ -4003,7 +3882,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf\"}",
+                "value": "{\"text\":\"__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -4016,7 +3895,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+                    "value": "__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs",
                     "requireQuotes": false
                   }
                 ]
@@ -4060,7 +3939,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci\"}",
+                "value": "{\"text\":\"__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -4073,7 +3952,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+                    "value": "__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy",
                     "requireQuotes": false
                   }
                 ]
@@ -4109,7 +3988,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+              "value": "__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy",
               "inverted": false
             },
             {
@@ -4170,7 +4049,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+              "value": "__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs",
               "inverted": false
             },
             {
@@ -4209,7 +4088,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -4262,7 +4141,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
+              "value": "__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs",
               "inverted": false
             },
             {
@@ -4301,7 +4180,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
+              "value": "__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy",
               "inverted": false
             },
             {
@@ -4365,7 +4244,7 @@
                     "children": {
                       "name": {
                         "type": "nbt.string",
-                        "value": "@e[tag=tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf,limit=1]",
+                        "value": "@e[tag=__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs,limit=1]",
                         "requireQuotes": true
                       },
                       "objective": {
@@ -4397,68 +4276,14 @@
       "value": "Variable cleanup"
     },
     {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler__if_handler__if_handler_11__maths_output_l6gp5rsyh7n3fbsrpastbno6lkddy3kf",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "tick__if_handler__if_handler__if_handler_12__constant_int_lm3urdqpgduasxujpxbjprbk25pzycci",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
+      "type": "comment",
+      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:tick__if_handler__if_handler_blu3offmhmk5emm7muq5zc2yail5qm25": [
+  "namespace:tick__if_handler__if_handler_4hlujctdd5yl463gfi5cfc37ya646lma": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_ozwga7tbrwtkip4aqkqjzw5lxhukpsij"
+      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6"
     },
     {
       "type": "command",
@@ -4486,7 +4311,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -4525,7 +4350,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
               "inverted": false
             },
             {
@@ -4560,7 +4385,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:swap_whdarrbe7tip7mnjnzjg37in6ptz4xgh",
+            "value": "namespace:swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv",
             "requireQuotes": false
           }
         }
@@ -4575,10 +4400,68 @@
       "value": "(No variables to clean up)"
     }
   ],
-  "namespace:setup_aecqas5ra64x3bkygicb4und24aojlcb": [
+  "namespace:setup_v4vjkuiid7g6mmehdsrj3bx735jdr4ga": [
     {
       "type": "comment",
       "value": "Begin function setup, child of __root"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "command",
@@ -4745,7 +4628,7 @@
       "value": "(No variables to clean up)"
     }
   ],
-  "namespace:cleanup_xjhypfsfmxr5srxjas3rce7jbrqejcjp": [
+  "namespace:cleanup_c7i4mrjjbtka6yoejyuoyuxp2r2nourn": [
     {
       "type": "comment",
       "value": "Begin function cleanup, child of __root"
@@ -4915,7 +4798,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:setup_aecqas5ra64x3bkygicb4und24aojlcb",
+            "value": "namespace:setup_v4vjkuiid7g6mmehdsrj3bx735jdr4ga",
             "requireQuotes": false
           }
         }
@@ -4966,7 +4849,7 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:tick_5hwthuggk4vhhrdspscuuc4jjqb3mls3",
+                "value": "namespace:tick_udizkzxwh5vwkwpghkx3alugmcsrdmeb",
                 "requireQuotes": false
               }
             }
@@ -4992,7 +4875,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:cleanup_xjhypfsfmxr5srxjas3rce7jbrqejcjp",
+            "value": "namespace:cleanup_c7i4mrjjbtka6yoejyuoyuxp2r2nourn",
             "requireQuotes": false
           }
         }
@@ -5012,7 +4895,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_zctdnlynqsqg5vqixnv7vdfgzs7gynbt",
+              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
               "inverted": false
             },
             {
@@ -5041,7 +4924,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__root_0__maths_output_imnyilvfbc6lw4qhqjkcmsdaawyqeand",
+              "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
               "inverted": false
             },
             {
@@ -5070,7 +4953,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "countdown_start_6rofx5diidutm7iw3txhjozqtrlhnmw4",
+              "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
               "inverted": false
             },
             {
@@ -5099,7 +4982,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__root_1__maths_output_mvbilnjehm6hgzgniwdaaml426vwg4iy",
+              "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
               "inverted": false
             },
             {
@@ -5128,7 +5011,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_erpzazbo6qlzppmjrhgdxufdfgqiqr4y",
+              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
               "inverted": false
             },
             {
@@ -5216,35 +5099,6 @@
             {
               "name": "tag",
               "value": "player_two",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "syhru7sjcms54sbs2hbfi3gmw4nbugqc",
               "inverted": false
             },
             {

@@ -117,18 +117,6 @@
       }
     },
     {
-      "type": "VariableDeclaration",
-      "decorators": [],
-      "name": {
-        "type": "identifier",
-        "value": "swap_marker"
-      },
-      "varType": {
-        "type": "identifier",
-        "value": "entity"
-      }
-    },
-    {
       "type": "FunctionDeclaration",
       "decorators": [],
       "name": {
@@ -161,30 +149,35 @@
             }
           },
           {
-            "type": "FunctionCall",
+            "type": "VariableInit",
+            "decorators": [],
             "name": {
               "type": "identifier",
-              "value": "execute"
+              "value": "swap_marker"
             },
-            "args": {
-              "type": "ArgumentList",
-              "named": {
-                "at": {
-                  "type": "identifier",
-                  "value": "player_one"
-                }
+            "varType": {
+              "type": "identifier",
+              "value": "entity"
+            },
+            "value": {
+              "type": "FunctionCall",
+              "name": {
+                "type": "identifier",
+                "value": "execute"
               },
-              "positional": [
-                {
-                  "type": "block",
-                  "statements": [
-                    {
-                      "type": "Assignment",
-                      "name": {
-                        "type": "identifier",
-                        "value": "swap_marker"
-                      },
-                      "value": {
+              "args": {
+                "type": "ArgumentList",
+                "named": {
+                  "at": {
+                    "type": "identifier",
+                    "value": "player_one"
+                  }
+                },
+                "positional": [
+                  {
+                    "type": "block",
+                    "statements": [
+                      {
                         "type": "FunctionCall",
                         "name": {
                           "type": "identifier",
@@ -194,8 +187,8 @@
                           "type": "ArgumentList",
                           "named": {
                             "marker": {
-                              "type": "identifier",
-                              "value": "true"
+                              "type": "int",
+                              "value": 1
                             }
                           },
                           "positional": [
@@ -206,10 +199,10 @@
                           ]
                         }
                       }
-                    }
-                  ]
-                }
-              ]
+                    ]
+                  }
+                ]
+              }
             }
           },
           {
@@ -318,23 +311,6 @@
                       }
                     }
                   ]
-                }
-              ]
-            }
-          },
-          {
-            "type": "FunctionCall",
-            "name": {
-              "type": "identifier",
-              "value": "kill"
-            },
-            "args": {
-              "type": "ArgumentList",
-              "named": {},
-              "positional": [
-                {
-                  "type": "identifier",
-                  "value": "swap_marker"
                 }
               ]
             }
@@ -599,6 +575,40 @@
       "block": {
         "type": "block",
         "statements": [
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "kill"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "player_one"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "kill"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "player_two"
+                }
+              ]
+            }
+          },
           {
             "type": "FunctionCall",
             "name": {

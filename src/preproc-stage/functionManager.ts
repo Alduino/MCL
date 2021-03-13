@@ -16,6 +16,7 @@ export default class FunctionManager {
     private currentScope: VariableInformation[] = [];
 
     private useParent = false;
+    private aups = false;
 
     begin(description: string, name?: string) {
         if (!name) {
@@ -81,11 +82,11 @@ export default class FunctionManager {
     }
 
     getEveryScope() {
-        return [...this.currentScope, ...this.globalScope];
+        return [...this.currentScope, ...this.globalScope, ...this.parentScopes.flat()];
     }
 
     inGlobalScope() {
-        return this.useParent ? this.parentScopes.length <= 2 : this.parentScopes.length <= 1;
+        return this.useParent && !this.aups ? this.parentScopes.length <= 2 : this.parentScopes.length <= 1;
     }
 
     getAll(): ReadonlyMap<string, (Command | Comment)[]> {
@@ -100,8 +101,20 @@ export default class FunctionManager {
         return Array.from(this.functionMapping.entries()).find(v => v[1] === this.currentFunction)?.[0] || "the root function";
     }
 
-    useParentScope(force: boolean = true) {
+    useParentScope(force = true) {
         this.useParent = force;
+    }
+
+    enableAdvancedUPS(value = true) {
+        this.aups = value;
+    }
+
+    beginAUPS() {
+        this.aups = false;
+    }
+
+    endAUPS() {
+        this.aups = true;
     }
 
     setFunctionVariable(name: string, variable: VariableInformation) {
@@ -110,5 +123,19 @@ export default class FunctionManager {
 
     getFunctionVariable(name: string) {
         return this.functionVars.get(name);
+    }
+
+    getScope(variable: VariableInformation) {
+        // search through every scope to find it
+        // it's not very efficient but it will have to do for now
+
+        if (this.getGlobalScope().includes(variable)) return this.getGlobalScope();
+        if (this.getCurrentScope().includes(variable)) return this.getCurrentScope();
+
+        for (const scope of this.parentScopes) {
+            if (scope.includes(variable)) return scope;
+        }
+
+        throw new Error(`Variable ${variable.srcName} is not defined`);
     }
 }

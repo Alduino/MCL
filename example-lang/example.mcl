@@ -12,15 +12,13 @@ var game_running: int
 // internally these are tags added to the entity, which is selected when used
 #[expose] var player_one: entity
 #[expose] var player_two: entity
-var swap_marker: entity
 
 fn swap() {
     say(to=PLAYERS, "Swapping!")
 
     // summon an armor stand at player_one as temp
-    execute(at=player_one) {
-        // must be a global variable as it is used outside of this function
-        swap_marker = summon("armor_stand", marker=1)
+    var swap_marker: entity = execute(at=player_one) {
+        summon("armor_stand", marker=1)
     }
 
     // teleport player one to player two
@@ -28,8 +26,6 @@ fn swap() {
 
     // teleport player two to swap marker
     execute(at=swap_marker) { teleport(player_two, <~, ~, ~>) }
-
-    kill(swap_marker)
 }
 
 #[tick]
@@ -53,6 +49,10 @@ fn tick() {
 
 #[setup]
 fn setup() {
+    // allows them to be set by the user
+    kill(player_one)
+    kill(player_two)
+
     say(to=PLAYERS, "Run /tag [PLAYER NAME] player_one on one player")
     say(to=PLAYERS, "and /tag [PLAYER NAME] player_two on the other.")
     say(to=PLAYERS, "Then set the value scoreboard for player game_running to 1 to start.")

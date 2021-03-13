@@ -1,4 +1,4 @@
-import {Processor, s, VariableInformation} from "./process";
+import {EntityVariableInformation, Processor, s, VariableInformation} from "./process";
 import ArgumentList from "../parser/ast-structure/ArgumentList";
 import Argument from "../pregen-structure/Argument";
 import {Command} from "../pregen-structure/PreGen";
@@ -10,6 +10,12 @@ import NbtArray from "../pregen-structure/nbt/NbtArray";
 import ScoreboardSelectorArgument from "../pregen-structure/selector/ScoreboardSelectorArgument";
 import Range from "../pregen-structure/util/Range";
 import SelectorArgument from "../pregen-structure/selector/SelectorArgument";
+import Coordinate from "../pregen-structure/coord/Coordinate";
+import CoordinatePart from "../pregen-structure/coord/CoordinatePart";
+import CoordinateType from "../pregen-structure/coord/CoordinateType";
+import NbtChild from "../pregen-structure/nbt/NbtChild";
+import NbtNumber, {NumberType} from "../pregen-structure/nbt/NbtNumber";
+import ObjectiveNameGenerator from "./ObjectiveNameGenerator";
 
 const nativeStd: {
     [key: string]: (processor: Processor, args: ArgumentList) => VariableInformation | null
@@ -38,7 +44,7 @@ const nativeStd: {
             }
         }
 
-        const {name: functionName, result} = processor._handleBlock("command_execute", null, block);
+        const {name: functionName, result} = processor._handleBlock(processor.autoName("command_execute"), null, block);
 
         argus.push(new Nbt(new NbtString("run")));
         argus.push(new Command("function", [
@@ -96,7 +102,7 @@ const nativeStd: {
                     text: new NbtString(arg.value, true)
                 });
             } else if (arg.type === "identifier") {
-                const variable  = processor.fn.getVariable(arg);
+                const variable = processor.fn.getVariable(arg);
 
                 if (variable.type === "entity") {
                     return new NbtObject({
@@ -136,7 +142,7 @@ const nativeStd: {
 
         const result = processor._handleComparison(comparison);
 
-        const fn = processor._handleBlock(processor.fn.getFunctionDesc() + "__if_handler", null, block);
+        const {name: fn} = processor._handleBlock(processor.fn.getFunctionDesc() + "__if_handler", null, block);
 
         processor.fn.push(new Command("execute", [
             s("if"),
@@ -150,6 +156,87 @@ const nativeStd: {
             s("function"),
             s(`${processor.namespace}:${fn}`)
         ]));
+
+        return null;
+    },
+
+    summon(processor, args) {
+        const type = args.positional[0];
+
+        let pos = args.positional[1] || new Coordinate(
+            new CoordinatePart(CoordinateType.Relative, 0),
+            new CoordinatePart(CoordinateType.Relative, 0),
+            new CoordinatePart(CoordinateType.Relative, 0)
+        );
+
+        if (!type) throw new Error("summon expects (type, pos?)");
+        if (type.type !== "string") throw new Error("summon(type) must be a string");
+
+        if (pos.type === "Coordinate") {
+            pos = new Coordinate(pos.x, pos.y, pos.z);
+        }
+
+        if (pos.type !== "coordinate") throw new Error("summon(pos) must be a coordinate");
+
+        const name = processor.autoName(`summon_${type.value}`);
+
+        // create the variable for the entity
+        const variable: EntityVariableInformation = {
+            type: "entity",
+            srcName: name,
+            tag: name + "_" + ObjectiveNameGenerator.generate(32)
+        };
+
+        processor.fn.getCurrentScope().push(variable);
+
+        const nbtEntries: [string, NbtChild][] = [
+            ["Tags", new NbtArray([
+                new NbtString(variable.tag, true)
+            ])]
+        ];
+
+        switch (type.value) {
+            case "armor_stand":
+                if (args.named["marker"]?.type === "int" && args.named["marker"].value === 1) {
+                    nbtEntries.push(["CustomNameVisible", new NbtNumber(1, NumberType.Byte)]);
+                    nbtEntries.push(["CustomName", new NbtString("{\"text\":\"marker\"}")]);
+                }
+        }
+
+        processor.fn.push(new Command("summon", [
+            s(type.value),
+            pos,
+            new Nbt(new NbtObject(Object.fromEntries(nbtEntries)))
+        ]));
+
+        return variable;
+    },
+
+    teleport(processor, args) {
+        if (args.positional.length !== 2) throw new Error("teleport expects (player, target)");
+
+        const [player, target] = args.positional;
+
+        if (player.type !== "identifier" || processor.fn.getVariable(player).type !== "entity")
+            throw new Error("teleport(player) must be an entity");
+
+        if (target.type === "Coordinate") {
+            processor.fn.push(new Command("tp", [
+                Processor.getVariableSelector(processor.fn.getVariable(player)),
+                new Coordinate(target.x, target.y, target.z)
+            ]));
+        } else if (target.type === "identifier") {
+            // make sure the variable is an entity
+            if (processor.fn.getVariable(target).type !== "entity")
+                throw new Error("teleport(target) must be a coordinate or an entity");
+
+            processor.fn.push(new Command("tp", [
+                Processor.getVariableSelector(processor.fn.getVariable(player)),
+                Processor.getVariableSelector(processor.fn.getVariable(target))
+            ]));
+        } else {
+            throw new Error("teleport(target) must be a coordinate or an entity");
+        }
 
         return null;
     }

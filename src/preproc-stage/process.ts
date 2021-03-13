@@ -60,13 +60,13 @@ export class Processor {
             if (variable.selectorOverride) return variable.selectorOverride;
 
             return new Selector([
-                new SelectorArgument("tag", variable.tag, false),
-                new SelectorArgument("limit", new Range(1, 1), false)
+                new SelectorArgument("tag", variable.tag),
+                new SelectorArgument("limit", new Range(1, 1))
             ], SelectorTarget.Entities);
         } else if (variable.type === "int") {
             return new Selector([
-                new SelectorArgument("tag", variable.score, false),
-                new SelectorArgument("limit", new Range(1, 1), false)
+                new SelectorArgument("tag", variable.score),
+                new SelectorArgument("limit", new Range(1, 1))
             ], SelectorTarget.Entities);
         } else throw new Error(`Invalid variable type, expected entity or int`)
     }
@@ -294,7 +294,7 @@ export class Processor {
     }
 
     _handleVariableDeclaration(statement: VariableDeclaration): VariableInformation {
-        if (this.fn.hasVariable(statement.name)) throw new Error(`Variable ${statement.name} already exists`);
+        if (this.fn.hasVariable(statement.name)) throw new Error(`Variable ${statement.name.value} already exists`);
 
         const srcName = statement.name.value;
 
@@ -338,7 +338,9 @@ export class Processor {
 
     _handleFunctionCall(statement: FunctionCall) {
         if (hasStdFunc(statement.name.value)) {
-            return nativeStd[statement.name.value](this, statement.args);
+            const res = nativeStd[statement.name.value](this, statement.args);
+            console.log("Std function variable for", statement.name.value, "is", res);
+            return res;
         }
 
         if (this.fn.hasFunctionByDesc(statement.name.value)) {
@@ -349,6 +351,7 @@ export class Processor {
                 s(`${this.namespace}:${fnName}`)
             ]));
 
+            console.log("Function variable for", statement.name.value, "is", this.fn.getFunctionVariable(fnName));
             return this.fn.getFunctionVariable(fnName);
         }
 
@@ -361,7 +364,7 @@ export class Processor {
         let result: VariableInformation;
 
         if (statement.value.type === "FunctionCall") {
-            return this._handleFunctionCall(statement.value);
+            result = this._handleFunctionCall(statement.value);
         } else {
             result = this._handleExpression(statement.value);
         }
@@ -380,12 +383,33 @@ export class Processor {
                 Processor.getVariableSelector(result),
                 s(Processor.valueObjective)
             ]));
+        } else {
+            // we already know variable is an entity, but typescript doesn't so this will make it
+            if (variable.type !== "entity") throw new Error("How did we get here?");
+
+            // clean up the old value
+            if (!variable.disableCleanup) {
+                this.fn.push(new Command("kill", [Processor.getVariableSelector(variable)]));
+            } else {
+                console.warn("Old value of", variable.srcName, "was not cleaned up, variable may have two values");
+            }
+
+            // remove the new variable from its old scope (i.e. move ownership to new variable's scope)
+            const oldScope = this.fn.getScope(result);
+            oldScope.slice(oldScope.indexOf(result), 1);
+
+            this.fn.push(new Command("tag", [
+                Processor.getVariableSelector(result),
+                s("add"),
+                s(variable.tag)
+            ]));
         }
 
         return variable;
     }
 
     _handleExpression(expr: Expression) {
+        this.fn.enableAdvancedUPS(false);
         switch (expr.type) {
             case "Comparison":
                 return this._handleComparison(expr);
@@ -447,6 +471,7 @@ export class Processor {
 
         this.fn.push(new Comment(`Comparison between ${left.value} and ${right.value}`))
 
+        this.fn.enableAdvancedUPS();
         const leftVariable = left.type === "identifier" ?
             this.fn.getVariable(left) :
             this._createIntVariable(this.autoName("comparison_left"), null, left.value);
@@ -457,6 +482,7 @@ export class Processor {
 
         const variable = this._createIntVariable(this.autoName("comparison"));
 
+        this.fn.beginAUPS();
         this.fn.push(new Command("execute", [
             s(comparison === ComparisonType.NotEqual ? "unless" : "if"),
             s("score"),
@@ -468,6 +494,9 @@ export class Processor {
             s("run"),
             this.getIntVarSetter(variable, 1)
         ]));
+        this.fn.endAUPS();
+
+        this.fn.enableAdvancedUPS(false);
 
         return variable;
     }
@@ -522,7 +551,11 @@ export class Processor {
     }
 
     private _evaluateMaths(expr: Maths) {
+        this.fn.enableAdvancedUPS();
+
+        this.fn.beginAUPS();
         const output = this._createIntVariable(this.autoName("maths_output"));
+        this.fn.endAUPS();
 
         // attempt to statically calculate the value
         // this is only possible if there are no variable references
@@ -537,6 +570,8 @@ export class Processor {
         // this method is similar to comparisons
         const left = this._handleExpression(expr.left);
         const right = this._handleExpression(expr.right);
+
+        this.fn.enableAdvancedUPS(false);
 
         // scoreboard maths is like machine code maths, the first input doubles as the output
         // so we copy left into output, then use output as the first input so it can be mutated
@@ -599,9 +634,9 @@ export class Processor {
         }
     }
 
-    autoNameIncr = 0;
+    private autoNameIncr = 0;
     autoName(base: string) {
-        return `${this.fn.getFunctionDesc()}_${this.autoNameIncr++}__${base}`;
+        return `__${this.fn.getFunctionDesc()}_${this.autoNameIncr++}__${base}`;
     }
 }
 
