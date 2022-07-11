@@ -38,7 +38,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"init_timer_2j3h4bntj54srlptq3plogow5gtey2st\"}",
+                "value": "{\"text\":\"init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -51,7 +51,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
+                    "value": "init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv",
                     "requireQuotes": false
                   }
                 ]
@@ -60,6 +60,10 @@
           }
         }
       ]
+    },
+    {
+      "type": "comment",
+      "value": "Evaluating maths expression"
     },
     {
       "type": "command",
@@ -95,7 +99,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww\"}",
+                "value": "{\"text\":\"____root_0__maths_output_rtseknclanwd2cm7hzuzlfeoxbwcvc6m\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -108,7 +112,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
+                    "value": "____root_0__maths_output_rtseknclanwd2cm7hzuzlfeoxbwcvc6m",
                     "requireQuotes": false
                   }
                 ]
@@ -144,7 +148,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
+              "value": "____root_0__maths_output_rtseknclanwd2cm7hzuzlfeoxbwcvc6m",
               "inverted": false
             },
             {
@@ -173,7 +177,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "600",
+            "value": "6000",
             "requireQuotes": false
           }
         }
@@ -205,7 +209,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
+              "value": "init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv",
               "inverted": false
             },
             {
@@ -244,7 +248,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
+              "value": "____root_0__maths_output_rtseknclanwd2cm7hzuzlfeoxbwcvc6m",
               "inverted": false
             },
             {
@@ -268,6 +272,35 @@
             "value": "value",
             "requireQuotes": false
           }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "____root_0__maths_output_rtseknclanwd2cm7hzuzlfeoxbwcvc6m",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
         }
       ]
     },
@@ -305,7 +338,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x\"}",
+                "value": "{\"text\":\"countdown_start_2xrmop6f6gqmeznb2kljsbuw5j6e3svd\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -318,7 +351,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
+                    "value": "countdown_start_2xrmop6f6gqmeznb2kljsbuw5j6e3svd",
                     "requireQuotes": false
                   }
                 ]
@@ -327,6 +360,10 @@
           }
         }
       ]
+    },
+    {
+      "type": "comment",
+      "value": "Evaluating maths expression"
     },
     {
       "type": "command",
@@ -362,7 +399,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu\"}",
+                "value": "{\"text\":\"____root_1__maths_output_6vcq7cowmoi4e2jsuoqlpc5oy5kyfuz2\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -375,7 +412,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
+                    "value": "____root_1__maths_output_6vcq7cowmoi4e2jsuoqlpc5oy5kyfuz2",
                     "requireQuotes": false
                   }
                 ]
@@ -411,7 +448,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
+              "value": "____root_1__maths_output_6vcq7cowmoi4e2jsuoqlpc5oy5kyfuz2",
               "inverted": false
             },
             {
@@ -472,7 +509,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
+              "value": "countdown_start_2xrmop6f6gqmeznb2kljsbuw5j6e3svd",
               "inverted": false
             },
             {
@@ -511,7 +548,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
+              "value": "____root_1__maths_output_6vcq7cowmoi4e2jsuoqlpc5oy5kyfuz2",
               "inverted": false
             },
             {
@@ -535,6 +572,35 @@
             "value": "value",
             "requireQuotes": false
           }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "____root_1__maths_output_6vcq7cowmoi4e2jsuoqlpc5oy5kyfuz2",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
         }
       ]
     },
@@ -572,7 +638,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra\"}",
+                "value": "{\"text\":\"ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -585,7 +651,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+                    "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
                     "requireQuotes": false
                   }
                 ]
@@ -621,7 +687,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -660,7 +726,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
+              "value": "init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv",
               "inverted": false
             },
             {
@@ -745,7 +811,7 @@
       ]
     }
   ],
-  "namespace:swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv": [
+  "namespace:swap_ppjs3r4t7v3ilg5lypvm52qrv2owaeop": [
     {
       "type": "comment",
       "value": "Begin function swap, child of __root"
@@ -835,38 +901,9 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:__swap_2__command_execute_jbr6meyxbj4paqqc2ym7ah42cgm5ijhz",
+                "value": "namespace:__swap_2__command_execute_xrjs3fo62frzgdmuiadzw6xizovspl2p",
                 "requireQuotes": false
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
             }
           ]
         }
@@ -882,7 +919,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "____swap_2__command_execute_3__summon_armor_stand_heovaxyyt2fiudieb4cjgwktsteehfen",
+              "value": "____swap_2__command_execute_3__summon_armor_stand_joq6cqeg4jthjkbulv5tps4hh6cim6jm",
               "inverted": false
             },
             {
@@ -911,7 +948,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
+            "value": "tcnuqedeeimephuumed22pvkigxeollz",
             "requireQuotes": false
           }
         }
@@ -968,7 +1005,7 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:__swap_4__command_execute_yvhgxeplb6lhbedjwgwfunhywcvn7uhz",
+                "value": "namespace:__swap_4__command_execute_fyjhet25gqg7yhrhuo5uknbtljfkb5q6",
                 "requireQuotes": false
               }
             }
@@ -994,7 +1031,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
+              "value": "tcnuqedeeimephuumed22pvkigxeollz",
               "inverted": false
             },
             {
@@ -1027,7 +1064,7 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:__swap_5__command_execute_hxep72hu3egezdfmtjna55nefcinvkgy",
+                "value": "namespace:__swap_5__command_execute_7gxwte35feu2rg4ceo2ejbwtpn5ak3nl",
                 "requireQuotes": false
               }
             }
@@ -1037,7 +1074,7 @@
     },
     {
       "type": "comment",
-      "value": "Variable cleanup"
+      "value": "delete(swap_marker)"
     },
     {
       "type": "command",
@@ -1049,7 +1086,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "p7id2v46zrj7d56mekha2wgu5phgmx7d",
+              "value": "tcnuqedeeimephuumed22pvkigxeollz",
               "inverted": false
             },
             {
@@ -1069,10 +1106,10 @@
       ]
     }
   ],
-  "namespace:__swap_2__command_execute_jbr6meyxbj4paqqc2ym7ah42cgm5ijhz": [
+  "namespace:__swap_2__command_execute_xrjs3fo62frzgdmuiadzw6xizovspl2p": [
     {
       "type": "comment",
-      "value": "Begin function __swap_2__command_execute, child of swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv"
+      "value": "Begin function __swap_2__command_execute, child of swap"
     },
     {
       "type": "command",
@@ -1111,7 +1148,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "____swap_2__command_execute_3__summon_armor_stand_heovaxyyt2fiudieb4cjgwktsteehfen",
+                    "value": "____swap_2__command_execute_3__summon_armor_stand_joq6cqeg4jthjkbulv5tps4hh6cim6jm",
                     "requireQuotes": true
                   }
                 ]
@@ -1130,20 +1167,12 @@
           }
         }
       ]
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:__swap_4__command_execute_yvhgxeplb6lhbedjwgwfunhywcvn7uhz": [
+  "namespace:__swap_4__command_execute_fyjhet25gqg7yhrhuo5uknbtljfkb5q6": [
     {
       "type": "comment",
-      "value": "Begin function __swap_4__command_execute, child of swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv"
+      "value": "Begin function __swap_4__command_execute, child of swap"
     },
     {
       "type": "command",
@@ -1188,20 +1217,12 @@
           }
         }
       ]
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:__swap_5__command_execute_hxep72hu3egezdfmtjna55nefcinvkgy": [
+  "namespace:__swap_5__command_execute_7gxwte35feu2rg4ceo2ejbwtpn5ak3nl": [
     {
       "type": "comment",
-      "value": "Begin function __swap_5__command_execute, child of swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv"
+      "value": "Begin function __swap_5__command_execute, child of swap"
     },
     {
       "type": "command",
@@ -1246,17 +1267,9 @@
           }
         }
       ]
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:tick_udizkzxwh5vwkwpghkx3alugmcsrdmeb": [
+  "namespace:tick_nxenqwhva6rhiigcpgcwqmzivmfuyw3d": [
     {
       "type": "comment",
       "value": "Begin function tick, child of __root"
@@ -1299,7 +1312,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq\"}",
+                "value": "{\"text\":\"__tick_6__comparison_right_tfl27p4g2wpjlpsldlwqck7oirb3vxu3\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1312,7 +1325,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq",
+                    "value": "__tick_6__comparison_right_tfl27p4g2wpjlpsldlwqck7oirb3vxu3",
                     "requireQuotes": false
                   }
                 ]
@@ -1348,7 +1361,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq",
+              "value": "__tick_6__comparison_right_tfl27p4g2wpjlpsldlwqck7oirb3vxu3",
               "inverted": false
             },
             {
@@ -1417,7 +1430,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi\"}",
+                "value": "{\"text\":\"__tick_7__comparison_j34hejb2fqlp5rqngyiasq24v4djezlf\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1430,7 +1443,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi",
+                    "value": "__tick_7__comparison_j34hejb2fqlp5rqngyiasq24v4djezlf",
                     "requireQuotes": false
                   }
                 ]
@@ -1505,7 +1518,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick_6__comparison_right_cmlzpsqdtpz3hyaqbilnc5uy6e4ncbdq",
+              "value": "__tick_6__comparison_right_tfl27p4g2wpjlpsldlwqck7oirb3vxu3",
               "inverted": false
             },
             {
@@ -1564,7 +1577,2751 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi",
+                  "value": "__tick_7__comparison_j34hejb2fqlp5rqngyiasq24v4djezlf",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick_6__comparison_right_tfl27p4g2wpjlpsldlwqck7oirb3vxu3",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick_7__comparison_j34hejb2fqlp5rqngyiasq24v4djezlf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler_vwaj6mybfbpcd6jgcqbu2t2u3ihbh3dp",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick_7__comparison_j34hejb2fqlp5rqngyiasq24v4djezlf",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler_vwaj6mybfbpcd6jgcqbu2t2u3ihbh3dp": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler, child of tick"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 8
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 9
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"player_one_dead_5rn6hgevqjbo4ewptq7lpzcsibiz7rsi\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "player_one_dead_5rn6hgevqjbo4ewptq7lpzcsibiz7rsi",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 9
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 10
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"is_dead_player_one_hnlrx6i4nbwaaiwlprmftinztrifsrez\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "is_dead_player_one_hnlrx6i4nbwaaiwlprmftinztrifsrez",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "unless",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "is_dead_player_one_hnlrx6i4nbwaaiwlprmftinztrifsrez",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one_dead_5rn6hgevqjbo4ewptq7lpzcsibiz7rsi",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "is_dead_player_one_hnlrx6i4nbwaaiwlprmftinztrifsrez",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "is_dead_player_one_hnlrx6i4nbwaaiwlprmftinztrifsrez",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 10
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 11
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"player_two_dead_iesjar2glbibdiwq4px7fwjugvfgi27v\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "player_two_dead_iesjar2glbibdiwq4px7fwjugvfgi27v",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 11
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 12
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"is_dead_player_two_i7dcap356oojujaomm35dtgmj337yflh\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "is_dead_player_two_i7dcap356oojujaomm35dtgmj337yflh",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "unless",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "is_dead_player_two_i7dcap356oojujaomm35dtgmj337yflh",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two_dead_iesjar2glbibdiwq4px7fwjugvfgi27v",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "is_dead_player_two_i7dcap356oojujaomm35dtgmj337yflh",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "is_dead_player_two_i7dcap356oojujaomm35dtgmj337yflh",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between player_one_dead and 1"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 12
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 13
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler_8__comparison_right_7m6jcff2zstxzt5efydxnglfgwh7u6ri\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler_8__comparison_right_7m6jcff2zstxzt5efydxnglfgwh7u6ri",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler_8__comparison_right_7m6jcff2zstxzt5efydxnglfgwh7u6ri",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "1",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 13
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 14
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler_9__comparison_wbxucxzlfl5eosoep5j4dpgdqcjdwxv2\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler_9__comparison_wbxucxzlfl5eosoep5j4dpgdqcjdwxv2",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one_dead_5rn6hgevqjbo4ewptq7lpzcsibiz7rsi",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler_8__comparison_right_7m6jcff2zstxzt5efydxnglfgwh7u6ri",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "__tick__if_handler_9__comparison_wbxucxzlfl5eosoep5j4dpgdqcjdwxv2",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler_8__comparison_right_7m6jcff2zstxzt5efydxnglfgwh7u6ri",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler_9__comparison_wbxucxzlfl5eosoep5j4dpgdqcjdwxv2",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__if_handler_fur3vh5ksezsibmd32pevx6qcsetaqz6",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "unless",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler_9__comparison_wbxucxzlfl5eosoep5j4dpgdqcjdwxv2",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__else_handler_xzb2dbzsizm4et6u4wls73xezk5itqfe",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler_9__comparison_wbxucxzlfl5eosoep5j4dpgdqcjdwxv2",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "delete(player_one_dead)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_one_dead_5rn6hgevqjbo4ewptq7lpzcsibiz7rsi",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "delete(player_two_dead)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two_dead_iesjar2glbibdiwq4px7fwjugvfgi27v",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__if_handler_fur3vh5ksezsibmd32pevx6qcsetaqz6": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler"
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "selector": {
+                    "type": "nbt.string",
+                    "value": "@e[tag=player_two,limit=1]",
+                    "requireQuotes": true
+                  }
+                }
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": " wins!",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 14
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 15
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler__if_handler_10__constant_int_nzzdbmbmyzwyzvxu3ufskjaxfzsao2m4\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler__if_handler_10__constant_int_nzzdbmbmyzwyzvxu3ufskjaxfzsao2m4",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "game_running",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__if_handler_10__constant_int_nzzdbmbmyzwyzvxu3ufskjaxfzsao2m4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__if_handler_10__constant_int_nzzdbmbmyzwyzvxu3ufskjaxfzsao2m4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__else_handler_xzb2dbzsizm4et6u4wls73xezk5itqfe": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__else_handler, child of tick__if_handler"
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between player_two_dead and 1"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 15
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 16
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler__else_handler_11__comparison_right_mwmsen3uvhmlbdqorvl4mugctjw2tpsq\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler__else_handler_11__comparison_right_mwmsen3uvhmlbdqorvl4mugctjw2tpsq",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "set",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler_11__comparison_right_mwmsen3uvhmlbdqorvl4mugctjw2tpsq",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "1",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 16
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 17
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler__else_handler_12__comparison_kwboo2z3v4erlr3nbt3ez35xoq5lgwqx\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler__else_handler_12__comparison_kwboo2z3v4erlr3nbt3ez35xoq5lgwqx",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "player_two_dead_iesjar2glbibdiwq4px7fwjugvfgi27v",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler_11__comparison_right_mwmsen3uvhmlbdqorvl4mugctjw2tpsq",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "__tick__if_handler__else_handler_12__comparison_kwboo2z3v4erlr3nbt3ez35xoq5lgwqx",
+                  "inverted": false
+                },
+                {
+                  "name": "limit",
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  },
+                  "inverted": false
+                }
+              ]
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "value",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "1",
+                "requireQuotes": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler_11__comparison_right_mwmsen3uvhmlbdqorvl4mugctjw2tpsq",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler_12__comparison_kwboo2z3v4erlr3nbt3ez35xoq5lgwqx",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__else_handler__if_handler_quh4aanv5ybhijoqfzhldp7yqmu3pgqd",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "unless",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "entity",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler_12__comparison_kwboo2z3v4erlr3nbt3ez35xoq5lgwqx",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            },
+            {
+              "name": "scores",
+              "value": {
+                "type": "scoreboard",
+                "scores": {
+                  "value": {
+                    "_elliRequiredKeys": [
+                      "type"
+                    ],
+                    "type": "range",
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "function",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "namespace:tick__if_handler__else_handler__else_handler_jz3sry7jrh37qdax55vgtqxuuhthssd5",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler_12__comparison_kwboo2z3v4erlr3nbt3ez35xoq5lgwqx",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__else_handler__if_handler_quh4aanv5ybhijoqfzhldp7yqmu3pgqd": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__else_handler__if_handler, child of tick__if_handler__else_handler"
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "selector": {
+                    "type": "nbt.string",
+                    "value": "@e[tag=player_one,limit=1]",
+                    "requireQuotes": true
+                  }
+                }
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": " wins!",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 17
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 18
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__if_handler_13__constant_int_jyhiqcbiy7xdq6w76jsygn47noe3pdy4\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler__else_handler__if_handler_13__constant_int_jyhiqcbiy7xdq6w76jsygn47noe3pdy4",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "scoreboard",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "players",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "operation",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "game_running",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__if_handler_13__constant_int_jyhiqcbiy7xdq6w76jsygn47noe3pdy4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__if_handler_13__constant_int_jyhiqcbiy7xdq6w76jsygn47noe3pdy4",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__else_handler__else_handler_jz3sry7jrh37qdax55vgtqxuuhthssd5": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__else_handler__else_handler, child of tick__if_handler__else_handler"
+    },
+    {
+      "type": "comment",
+      "value": "Comparison between ticks_left and init_timer"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 18
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 19
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler_14__comparison_p74z3y32soxeygmgq747566bxmxmpspi\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler__else_handler__else_handler_14__comparison_p74z3y32soxeygmgq747566bxmxmpspi",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "execute",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "if",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "score",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "=",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "value",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "run",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "command",
+          "name": "scoreboard",
+          "arguments": [
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "players",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "nbt",
+              "value": {
+                "type": "nbt.string",
+                "value": "set",
+                "requireQuotes": false
+              }
+            },
+            {
+              "type": "selector",
+              "target": 3,
+              "arguments": [
+                {
+                  "name": "tag",
+                  "value": "__tick__if_handler__else_handler__else_handler_14__comparison_p74z3y32soxeygmgq747566bxmxmpspi",
                   "inverted": false
                 },
                 {
@@ -1627,7 +4384,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick_7__comparison_kkxkogq3cjs2j2t2iwabtbud4bq4pgbi",
+              "value": "__tick__if_handler__else_handler__else_handler_14__comparison_p74z3y32soxeygmgq747566bxmxmpspi",
               "inverted": false
             },
             {
@@ -1681,25 +4438,44 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6",
+            "value": "namespace:tick__if_handler__else_handler__else_handler__if_handler_mzubticboosdjlhqiwsgj5yb3pylo42i",
             "requireQuotes": false
           }
         }
       ]
     },
     {
-      "type": "comment",
-      "value": "Variable cleanup"
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler_14__comparison_p74z3y32soxeygmgq747566bxmxmpspi",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "comment",
-      "value": "(No variables to clean up)"
-    }
-  ],
-  "namespace:tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6": [
-    {
-      "type": "comment",
-      "value": "Begin function tick__if_handler, child of tick_udizkzxwh5vwkwpghkx3alugmcsrdmeb"
+      "value": "Evaluating maths expression"
     },
     {
       "type": "command",
@@ -1717,7 +4493,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 8
+            "value": 19
           },
           "y": {
             "type": 1,
@@ -1725,7 +4501,7 @@
           },
           "z": {
             "type": 1,
-            "value": 9
+            "value": 20
           }
         },
         {
@@ -1735,7 +4511,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler_15__maths_output_za264n3niqjpdlzyokeb5lgm3z3zone6\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1748,7 +4524,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
+                    "value": "__tick__if_handler__else_handler__else_handler_15__maths_output_za264n3niqjpdlzyokeb5lgm3z3zone6",
                     "requireQuotes": false
                   }
                 ]
@@ -1774,7 +4550,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 9
+            "value": 20
           },
           "y": {
             "type": 1,
@@ -1782,7 +4558,7 @@
           },
           "z": {
             "type": 1,
-            "value": 10
+            "value": 21
           }
         },
         {
@@ -1792,7 +4568,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler_16__constant_int_5flsvkh55u4ftgxdlvs4ztw3jkt4tcpy\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -1805,7 +4581,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy",
+                    "value": "__tick__if_handler__else_handler__else_handler_16__constant_int_5flsvkh55u4ftgxdlvs4ztw3jkt4tcpy",
                     "requireQuotes": false
                   }
                 ]
@@ -1841,7 +4617,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy",
+              "value": "__tick__if_handler__else_handler__else_handler_16__constant_int_5flsvkh55u4ftgxdlvs4ztw3jkt4tcpy",
               "inverted": false
             },
             {
@@ -1902,7 +4678,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
+              "value": "__tick__if_handler__else_handler__else_handler_15__maths_output_za264n3niqjpdlzyokeb5lgm3z3zone6",
               "inverted": false
             },
             {
@@ -1941,7 +4717,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -1994,7 +4770,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
+              "value": "__tick__if_handler__else_handler__else_handler_15__maths_output_za264n3niqjpdlzyokeb5lgm3z3zone6",
               "inverted": false
             },
             {
@@ -2033,7 +4809,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_9__constant_int_524yrg3v3sa4rbdbkwow23n7ejin4fsy",
+              "value": "__tick__if_handler__else_handler__else_handler_16__constant_int_5flsvkh55u4ftgxdlvs4ztw3jkt4tcpy",
               "inverted": false
             },
             {
@@ -2057,6 +4833,35 @@
             "value": "value",
             "requireQuotes": false
           }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler_16__constant_int_5flsvkh55u4ftgxdlvs4ztw3jkt4tcpy",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
         }
       ]
     },
@@ -2086,7 +4891,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -2125,7 +4930,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_8__maths_output_2jrmsdhvo6sch4yiplycy4qr53elqluw",
+              "value": "__tick__if_handler__else_handler__else_handler_15__maths_output_za264n3niqjpdlzyokeb5lgm3z3zone6",
               "inverted": false
             },
             {
@@ -2153,6 +4958,35 @@
       ]
     },
     {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler_15__maths_output_za264n3niqjpdlzyokeb5lgm3z3zone6",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "comment",
       "value": "Comparison between ticks_left and countdown_start"
     },
@@ -2172,7 +5006,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 10
+            "value": 21
           },
           "y": {
             "type": 1,
@@ -2180,7 +5014,7 @@
           },
           "z": {
             "type": 1,
-            "value": 11
+            "value": 22
           }
         },
         {
@@ -2190,7 +5024,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler_17__comparison_ts5xafqqi2juga4yokfwkceoq7au34tr\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2203,7 +5037,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6",
+                    "value": "__tick__if_handler__else_handler__else_handler_17__comparison_ts5xafqqi2juga4yokfwkceoq7au34tr",
                     "requireQuotes": false
                   }
                 ]
@@ -2239,7 +5073,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -2278,7 +5112,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
+              "value": "countdown_start_2xrmop6f6gqmeznb2kljsbuw5j6e3svd",
               "inverted": false
             },
             {
@@ -2337,7 +5171,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6",
+                  "value": "__tick__if_handler__else_handler__else_handler_17__comparison_ts5xafqqi2juga4yokfwkceoq7au34tr",
                   "inverted": false
                 },
                 {
@@ -2400,7 +5234,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_10__comparison_edrpsudaqb37g3mbbzua2o5v2f35lcf6",
+              "value": "__tick__if_handler__else_handler__else_handler_17__comparison_ts5xafqqi2juga4yokfwkceoq7au34tr",
               "inverted": false
             },
             {
@@ -2454,9 +5288,38 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler__if_handler_ozvr65yvdthqhsqghgf3sgqyzgjwu3qx",
+            "value": "namespace:tick__if_handler__else_handler__else_handler__if_handler_byj3prdmht6rdwngeemlosbmicj3lene",
             "requireQuotes": false
           }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler_17__comparison_ts5xafqqi2juga4yokfwkceoq7au34tr",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
         }
       ]
     },
@@ -2480,7 +5343,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 18
+            "value": 29
           },
           "y": {
             "type": 1,
@@ -2488,7 +5351,7 @@
           },
           "z": {
             "type": 1,
-            "value": 19
+            "value": 30
           }
         },
         {
@@ -2498,7 +5361,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler_24__comparison_right_cktp5fd6jaqjm67mg4q7tam2bnnqieba\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2511,7 +5374,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d",
+                    "value": "__tick__if_handler__else_handler__else_handler_24__comparison_right_cktp5fd6jaqjm67mg4q7tam2bnnqieba",
                     "requireQuotes": false
                   }
                 ]
@@ -2547,7 +5410,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d",
+              "value": "__tick__if_handler__else_handler__else_handler_24__comparison_right_cktp5fd6jaqjm67mg4q7tam2bnnqieba",
               "inverted": false
             },
             {
@@ -2598,7 +5461,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 19
+            "value": 30
           },
           "y": {
             "type": 1,
@@ -2606,7 +5469,7 @@
           },
           "z": {
             "type": 1,
-            "value": 20
+            "value": 31
           }
         },
         {
@@ -2616,7 +5479,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler_25__comparison_abvnxi2cvihhboi33gh7nz7bclg5auie\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2629,7 +5492,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc",
+                    "value": "__tick__if_handler__else_handler__else_handler_25__comparison_abvnxi2cvihhboi33gh7nz7bclg5auie",
                     "requireQuotes": false
                   }
                 ]
@@ -2665,7 +5528,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -2704,7 +5567,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_17__comparison_right_hf7yk74f2ts6lhrosltcoexvbfo4ot7d",
+              "value": "__tick__if_handler__else_handler__else_handler_24__comparison_right_cktp5fd6jaqjm67mg4q7tam2bnnqieba",
               "inverted": false
             },
             {
@@ -2763,7 +5626,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc",
+                  "value": "__tick__if_handler__else_handler__else_handler_25__comparison_abvnxi2cvihhboi33gh7nz7bclg5auie",
                   "inverted": false
                 },
                 {
@@ -2802,6 +5665,35 @@
     },
     {
       "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler_24__comparison_right_cktp5fd6jaqjm67mg4q7tam2bnnqieba",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
       "name": "execute",
       "arguments": [
         {
@@ -2826,7 +5718,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler_18__comparison_ngc5p3icqdjze2ecj3dlsm6v3jqt3gdc",
+              "value": "__tick__if_handler__else_handler__else_handler_25__comparison_abvnxi2cvihhboi33gh7nz7bclg5auie",
               "inverted": false
             },
             {
@@ -2880,25 +5772,86 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler__if_handler_4hlujctdd5yl463gfi5cfc37ya646lma",
+            "value": "namespace:tick__if_handler__else_handler__else_handler__if_handler_434u6qxldl2b4jjaffewvpuu77we37ng",
             "requireQuotes": false
           }
         }
       ]
     },
     {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler_25__comparison_abvnxi2cvihhboi33gh7nz7bclg5auie",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     }
   ],
-  "namespace:tick__if_handler__if_handler_ozvr65yvdthqhsqghgf3sgqyzgjwu3qx": [
+  "namespace:tick__if_handler__else_handler__else_handler__if_handler_mzubticboosdjlhqiwsgj5yb3pylo42i": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6"
+      "value": "Begin function tick__if_handler__else_handler__else_handler__if_handler, child of tick__if_handler__else_handler__else_handler"
+    },
+    {
+      "type": "command",
+      "name": "tellraw",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 2,
+          "arguments": []
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.array",
+            "children": [
+              {
+                "type": "nbt.string",
+                "value": "",
+                "requireQuotes": true
+              },
+              {
+                "type": "nbt.object",
+                "children": {
+                  "text": {
+                    "type": "nbt.string",
+                    "value": "Swapping in 5 minutes",
+                    "requireQuotes": true
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "namespace:tick__if_handler__else_handler__else_handler__if_handler_byj3prdmht6rdwngeemlosbmicj3lene": [
+    {
+      "type": "comment",
+      "value": "Begin function tick__if_handler__else_handler__else_handler__if_handler, child of tick__if_handler__else_handler__else_handler"
     },
     {
       "type": "command",
@@ -2916,7 +5869,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 11
+            "value": 22
           },
           "y": {
             "type": 1,
@@ -2924,7 +5877,7 @@
           },
           "z": {
             "type": 1,
-            "value": 12
+            "value": 23
           }
         },
         {
@@ -2934,7 +5887,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt\"}",
+                "value": "{\"text\":\"ticks_left_mod_u5bacbtxavloos7j2hw3gigg53mk33my\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -2947,7 +5900,68 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt",
+                    "value": "ticks_left_mod_u5bacbtxavloos7j2hw3gigg53mk33my",
+                    "requireQuotes": false
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "Evaluating maths expression"
+    },
+    {
+      "type": "command",
+      "name": "summon",
+      "arguments": [
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.string",
+            "value": "armor_stand",
+            "requireQuotes": false
+          }
+        },
+        {
+          "type": "coordinate",
+          "x": {
+            "type": 1,
+            "value": 23
+          },
+          "y": {
+            "type": 1,
+            "value": 3
+          },
+          "z": {
+            "type": 1,
+            "value": 24
+          }
+        },
+        {
+          "type": "nbt",
+          "value": {
+            "type": "nbt.object",
+            "children": {
+              "CustomName": {
+                "type": "nbt.string",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler__if_handler_18__maths_output_tb5dcjfdou3rouhdriwydgcqzbhmaxxy\"}",
+                "requireQuotes": false
+              },
+              "CustomNameVisible": {
+                "type": "nbt.number",
+                "value": 1,
+                "numberType": 0
+              },
+              "Tags": {
+                "type": "nbt.array",
+                "children": [
+                  {
+                    "type": "nbt.string",
+                    "value": "__tick__if_handler__else_handler__else_handler__if_handler_18__maths_output_tb5dcjfdou3rouhdriwydgcqzbhmaxxy",
                     "requireQuotes": false
                   }
                 ]
@@ -2973,7 +5987,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 12
+            "value": 24
           },
           "y": {
             "type": 1,
@@ -2981,7 +5995,7 @@
           },
           "z": {
             "type": 1,
-            "value": 13
+            "value": 25
           }
         },
         {
@@ -2991,7 +6005,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler__if_handler_19__constant_int_yvhljmt3uyqqf6q2scxxd23uiqfmuke5\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3004,64 +6018,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
-                    "requireQuotes": false
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "summon",
-      "arguments": [
-        {
-          "type": "nbt",
-          "value": {
-            "type": "nbt.string",
-            "value": "armor_stand",
-            "requireQuotes": false
-          }
-        },
-        {
-          "type": "coordinate",
-          "x": {
-            "type": 1,
-            "value": 13
-          },
-          "y": {
-            "type": 1,
-            "value": 3
-          },
-          "z": {
-            "type": 1,
-            "value": 14
-          }
-        },
-        {
-          "type": "nbt",
-          "value": {
-            "type": "nbt.object",
-            "children": {
-              "CustomName": {
-                "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2\"}",
-                "requireQuotes": false
-              },
-              "CustomNameVisible": {
-                "type": "nbt.number",
-                "value": 1,
-                "numberType": 0
-              },
-              "Tags": {
-                "type": "nbt.array",
-                "children": [
-                  {
-                    "type": "nbt.string",
-                    "value": "__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2",
+                    "value": "__tick__if_handler__else_handler__else_handler__if_handler_19__constant_int_yvhljmt3uyqqf6q2scxxd23uiqfmuke5",
                     "requireQuotes": false
                   }
                 ]
@@ -3097,7 +6054,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_19__constant_int_yvhljmt3uyqqf6q2scxxd23uiqfmuke5",
               "inverted": false
             },
             {
@@ -3158,7 +6115,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_18__maths_output_tb5dcjfdou3rouhdriwydgcqzbhmaxxy",
               "inverted": false
             },
             {
@@ -3197,7 +6154,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -3250,7 +6207,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_18__maths_output_tb5dcjfdou3rouhdriwydgcqzbhmaxxy",
               "inverted": false
             },
             {
@@ -3289,7 +6246,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_12__constant_int_6ggcxqnztz2zzb2f2nbujzjkt5wnqqd2",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_19__constant_int_yvhljmt3uyqqf6q2scxxd23uiqfmuke5",
               "inverted": false
             },
             {
@@ -3313,6 +6270,35 @@
             "value": "value",
             "requireQuotes": false
           }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_19__constant_int_yvhljmt3uyqqf6q2scxxd23uiqfmuke5",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
         }
       ]
     },
@@ -3342,7 +6328,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt",
+              "value": "ticks_left_mod_u5bacbtxavloos7j2hw3gigg53mk33my",
               "inverted": false
             },
             {
@@ -3381,7 +6367,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_11__maths_output_r3guz46cwdrxwz76tg4kpny3xq7aiaib",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_18__maths_output_tb5dcjfdou3rouhdriwydgcqzbhmaxxy",
               "inverted": false
             },
             {
@@ -3409,6 +6395,35 @@
       ]
     },
     {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_18__maths_output_tb5dcjfdou3rouhdriwydgcqzbhmaxxy",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "comment",
       "value": "Comparison between ticks_left_mod and 1"
     },
@@ -3428,7 +6443,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 14
+            "value": 25
           },
           "y": {
             "type": 1,
@@ -3436,7 +6451,7 @@
           },
           "z": {
             "type": 1,
-            "value": 15
+            "value": 26
           }
         },
         {
@@ -3446,7 +6461,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler__if_handler_20__comparison_right_akxtbeccrtzz46mimfisgiubtk2jjplv\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3459,7 +6474,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna",
+                    "value": "__tick__if_handler__else_handler__else_handler__if_handler_20__comparison_right_akxtbeccrtzz46mimfisgiubtk2jjplv",
                     "requireQuotes": false
                   }
                 ]
@@ -3495,7 +6510,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_20__comparison_right_akxtbeccrtzz46mimfisgiubtk2jjplv",
               "inverted": false
             },
             {
@@ -3546,7 +6561,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 15
+            "value": 26
           },
           "y": {
             "type": 1,
@@ -3554,7 +6569,7 @@
           },
           "z": {
             "type": 1,
-            "value": 16
+            "value": 27
           }
         },
         {
@@ -3564,7 +6579,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler__if_handler_21__comparison_3tafzv7obvltvwxx7ykcj4wwdnspzv4h\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3577,7 +6592,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc",
+                    "value": "__tick__if_handler__else_handler__else_handler__if_handler_21__comparison_3tafzv7obvltvwxx7ykcj4wwdnspzv4h",
                     "requireQuotes": false
                   }
                 ]
@@ -3613,7 +6628,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_mod_7kpz4yyjdtroprxck76t7hnitrgiq6gt",
+              "value": "ticks_left_mod_u5bacbtxavloos7j2hw3gigg53mk33my",
               "inverted": false
             },
             {
@@ -3652,7 +6667,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_13__comparison_right_kursyyld4a7ubckznpyrlh5oiaqiirna",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_20__comparison_right_akxtbeccrtzz46mimfisgiubtk2jjplv",
               "inverted": false
             },
             {
@@ -3711,7 +6726,7 @@
               "arguments": [
                 {
                   "name": "tag",
-                  "value": "__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc",
+                  "value": "__tick__if_handler__else_handler__else_handler__if_handler_21__comparison_3tafzv7obvltvwxx7ykcj4wwdnspzv4h",
                   "inverted": false
                 },
                 {
@@ -3750,6 +6765,35 @@
     },
     {
       "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_20__comparison_right_akxtbeccrtzz46mimfisgiubtk2jjplv",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "command",
       "name": "execute",
       "arguments": [
         {
@@ -3774,7 +6818,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler_14__comparison_km3rlxpcain5bibnjhwjnrnkcgxj7tvc",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_21__comparison_3tafzv7obvltvwxx7ykcj4wwdnspzv4h",
               "inverted": false
             },
             {
@@ -3828,25 +6872,83 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:tick__if_handler__if_handler__if_handler_2tnn6rji6433e7swko3tiksteuhaqsbu",
+            "value": "namespace:tick__if_handler__else_handler__else_handler__if_handler__if_handler_3xl2rx6jhyrqnkp4bck3lvan7t23ygjl",
             "requireQuotes": false
           }
         }
       ]
     },
     {
-      "type": "comment",
-      "value": "Variable cleanup"
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler_21__comparison_3tafzv7obvltvwxx7ykcj4wwdnspzv4h",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "comment",
-      "value": "(No variables to clean up)"
+      "value": "delete(ticks_left_mod)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_mod_u5bacbtxavloos7j2hw3gigg53mk33my",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     }
   ],
-  "namespace:tick__if_handler__if_handler__if_handler_2tnn6rji6433e7swko3tiksteuhaqsbu": [
+  "namespace:tick__if_handler__else_handler__else_handler__if_handler__if_handler_3xl2rx6jhyrqnkp4bck3lvan7t23ygjl": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler__if_handler__if_handler, child of tick__if_handler__if_handler_ozvr65yvdthqhsqghgf3sgqyzgjwu3qx"
+      "value": "Begin function tick__if_handler__else_handler__else_handler__if_handler__if_handler, child of tick__if_handler__else_handler__else_handler__if_handler"
+    },
+    {
+      "type": "comment",
+      "value": "Evaluating maths expression"
     },
     {
       "type": "command",
@@ -3864,7 +6966,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 16
+            "value": 27
           },
           "y": {
             "type": 1,
@@ -3872,7 +6974,7 @@
           },
           "z": {
             "type": 1,
-            "value": 17
+            "value": 28
           }
         },
         {
@@ -3882,7 +6984,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler__if_handler__if_handler_22__maths_output_hnfb6y7i52ccqbz3aerlt24e2r4agx34\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3895,7 +6997,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs",
+                    "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_22__maths_output_hnfb6y7i52ccqbz3aerlt24e2r4agx34",
                     "requireQuotes": false
                   }
                 ]
@@ -3921,7 +7023,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 17
+            "value": 28
           },
           "y": {
             "type": 1,
@@ -3929,7 +7031,7 @@
           },
           "z": {
             "type": 1,
-            "value": 18
+            "value": 29
           }
         },
         {
@@ -3939,7 +7041,7 @@
             "children": {
               "CustomName": {
                 "type": "nbt.string",
-                "value": "{\"text\":\"__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy\"}",
+                "value": "{\"text\":\"__tick__if_handler__else_handler__else_handler__if_handler__if_handler_23__constant_int_2tmr67tx3tf3zqlq6jgax2tcfzrrnmot\"}",
                 "requireQuotes": false
               },
               "CustomNameVisible": {
@@ -3952,7 +7054,7 @@
                 "children": [
                   {
                     "type": "nbt.string",
-                    "value": "__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy",
+                    "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_23__constant_int_2tmr67tx3tf3zqlq6jgax2tcfzrrnmot",
                     "requireQuotes": false
                   }
                 ]
@@ -3988,7 +7090,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_23__constant_int_2tmr67tx3tf3zqlq6jgax2tcfzrrnmot",
               "inverted": false
             },
             {
@@ -4049,7 +7151,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_22__maths_output_hnfb6y7i52ccqbz3aerlt24e2r4agx34",
               "inverted": false
             },
             {
@@ -4088,7 +7190,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -4141,7 +7243,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_22__maths_output_hnfb6y7i52ccqbz3aerlt24e2r4agx34",
               "inverted": false
             },
             {
@@ -4180,7 +7282,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "__tick__if_handler__if_handler__if_handler_16__constant_int_ggpfb7txpfmo7rzd57pautyuqr4sbuxy",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_23__constant_int_2tmr67tx3tf3zqlq6jgax2tcfzrrnmot",
               "inverted": false
             },
             {
@@ -4204,6 +7306,35 @@
             "value": "value",
             "requireQuotes": false
           }
+        }
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_23__constant_int_2tmr67tx3tf3zqlq6jgax2tcfzrrnmot",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
         }
       ]
     },
@@ -4244,7 +7375,7 @@
                     "children": {
                       "name": {
                         "type": "nbt.string",
-                        "value": "@e[tag=__tick__if_handler__if_handler__if_handler_15__maths_output_fv7siih7pgruaak3jnr6uzctiucyzggs,limit=1]",
+                        "value": "@e[tag=__tick__if_handler__else_handler__else_handler__if_handler__if_handler_22__maths_output_hnfb6y7i52ccqbz3aerlt24e2r4agx34,limit=1]",
                         "requireQuotes": true
                       },
                       "objective": {
@@ -4272,18 +7403,39 @@
       ]
     },
     {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "__tick__if_handler__else_handler__else_handler__if_handler__if_handler_22__maths_output_hnfb6y7i52ccqbz3aerlt24e2r4agx34",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     }
   ],
-  "namespace:tick__if_handler__if_handler_4hlujctdd5yl463gfi5cfc37ya646lma": [
+  "namespace:tick__if_handler__else_handler__else_handler__if_handler_434u6qxldl2b4jjaffewvpuu77we37ng": [
     {
       "type": "comment",
-      "value": "Begin function tick__if_handler__if_handler, child of tick__if_handler_2i3pr3xekyew5hk5sr72wg4ukpdrpgf6"
+      "value": "Begin function tick__if_handler__else_handler__else_handler__if_handler, child of tick__if_handler__else_handler__else_handler"
     },
     {
       "type": "command",
@@ -4311,7 +7463,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
               "inverted": false
             },
             {
@@ -4350,7 +7502,7 @@
           "arguments": [
             {
               "name": "tag",
-              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
+              "value": "init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv",
               "inverted": false
             },
             {
@@ -4385,22 +7537,14 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:swap_ubmzwhguf6wkluffqbswacwe7i4oyfsv",
+            "value": "namespace:swap_ppjs3r4t7v3ilg5lypvm52qrv2owaeop",
             "requireQuotes": false
           }
         }
       ]
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:setup_v4vjkuiid7g6mmehdsrj3bx735jdr4ga": [
+  "namespace:setup_kz6evbcubk7rvdwvvaf2xkcel7xmfi4w": [
     {
       "type": "comment",
       "value": "Begin function setup, child of __root"
@@ -4564,71 +7708,9 @@
           }
         }
       ]
-    },
-    {
-      "type": "command",
-      "name": "tellraw",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 2,
-          "arguments": []
-        },
-        {
-          "type": "nbt",
-          "value": {
-            "type": "nbt.array",
-            "children": [
-              {
-                "type": "nbt.string",
-                "value": "",
-                "requireQuotes": true
-              },
-              {
-                "type": "nbt.object",
-                "children": {
-                  "text": {
-                    "type": "nbt.string",
-                    "value": "Oh and hi, ",
-                    "requireQuotes": true
-                  }
-                }
-              },
-              {
-                "type": "nbt.object",
-                "children": {
-                  "selector": {
-                    "type": "nbt.string",
-                    "value": "@r",
-                    "requireQuotes": true
-                  }
-                }
-              },
-              {
-                "type": "nbt.object",
-                "children": {
-                  "text": {
-                    "type": "nbt.string",
-                    "value": "!",
-                    "requireQuotes": true
-                  }
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "comment",
-      "value": "(No variables to clean up)"
     }
   ],
-  "namespace:cleanup_c7i4mrjjbtka6yoejyuoyuxp2r2nourn": [
+  "namespace:cleanup_aldozz2xbhe44crelt7flw7xnvj7l6f2": [
     {
       "type": "comment",
       "value": "Begin function cleanup, child of __root"
@@ -4669,11 +7751,135 @@
     },
     {
       "type": "comment",
-      "value": "Variable cleanup"
+      "value": "delete(init_timer)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "init_timer_cl7swbtrv5ew3xs6ayhnzyttiz4uv7yv",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "comment",
-      "value": "(No variables to clean up)"
+      "value": "delete(countdown_start)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "countdown_start_2xrmop6f6gqmeznb2kljsbuw5j6e3svd",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "delete(ticks_left)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "ticks_left_dheax7a4jqdoufwqjxnvywf6n6xqdcph",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "value": "delete(game_running)"
+    },
+    {
+      "type": "command",
+      "name": "kill",
+      "arguments": [
+        {
+          "type": "selector",
+          "target": 3,
+          "arguments": [
+            {
+              "name": "tag",
+              "value": "game_running",
+              "inverted": false
+            },
+            {
+              "name": "limit",
+              "value": {
+                "_elliRequiredKeys": [
+                  "type"
+                ],
+                "type": "range",
+                "min": 1,
+                "max": 1
+              },
+              "inverted": false
+            }
+          ]
+        }
+      ]
     }
   ],
   "namespace:__setup": [
@@ -4735,7 +7941,7 @@
           "type": "coordinate",
           "x": {
             "type": 1,
-            "value": 20
+            "value": 31
           },
           "y": {
             "type": 1,
@@ -4743,7 +7949,7 @@
           },
           "z": {
             "type": 1,
-            "value": 21
+            "value": 32
           }
         },
         {
@@ -4798,7 +8004,7 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:setup_v4vjkuiid7g6mmehdsrj3bx735jdr4ga",
+            "value": "namespace:setup_kz6evbcubk7rvdwvvaf2xkcel7xmfi4w",
             "requireQuotes": false
           }
         }
@@ -4849,7 +8055,7 @@
               "type": "nbt",
               "value": {
                 "type": "nbt.string",
-                "value": "namespace:tick_udizkzxwh5vwkwpghkx3alugmcsrdmeb",
+                "value": "namespace:tick_nxenqwhva6rhiigcpgcwqmzivmfuyw3d",
                 "requireQuotes": false
               }
             }
@@ -4875,245 +8081,9 @@
           "type": "nbt",
           "value": {
             "type": "nbt.string",
-            "value": "namespace:cleanup_c7i4mrjjbtka6yoejyuoyuxp2r2nourn",
+            "value": "namespace:cleanup_aldozz2xbhe44crelt7flw7xnvj7l6f2",
             "requireQuotes": false
           }
-        }
-      ]
-    },
-    {
-      "type": "comment",
-      "value": "Variable cleanup"
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "init_timer_2j3h4bntj54srlptq3plogow5gtey2st",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "____root_0__maths_output_a6ytpaxdcsto2vvtnvbf22ab2e4hvbww",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "countdown_start_yg6i7usxwdwdnvaelu67c2jqz4x6i67x",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "____root_1__maths_output_4ydsuykllygnzz7vwcstcf64c4ecyeeu",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "ticks_left_isbipydfoidborig5k2wpf3wlxlg5xra",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "game_running",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "player_one",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "command",
-      "name": "kill",
-      "arguments": [
-        {
-          "type": "selector",
-          "target": 3,
-          "arguments": [
-            {
-              "name": "tag",
-              "value": "player_two",
-              "inverted": false
-            },
-            {
-              "name": "limit",
-              "value": {
-                "_elliRequiredKeys": [
-                  "type"
-                ],
-                "type": "range",
-                "min": 1,
-                "max": 1
-              },
-              "inverted": false
-            }
-          ]
         }
       ]
     },

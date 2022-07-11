@@ -23,22 +23,23 @@ import Expression from "../parser/ast-structure/Expression";
 import Comparison, {ComparisonType} from "../parser/ast-structure/Comparison";
 import NbtNumber, {NumberType} from "../pregen-structure/nbt/NbtNumber";
 import Maths, {MathsOperation} from "../parser/ast-structure/Maths";
+import assert from "assert";
 
 export interface EntityVariableInformation {
     type: "entity";
     srcName: string;
     tag: string;
+    userCreated: boolean;
 
     // Overrides the selector with this one
     selectorOverride?: Selector;
-    disableCleanup?: boolean;
 }
 
 export interface IntVariableInformation {
     type: "int";
     srcName: string;
     score: string;
-    disableCleanup?: boolean;
+    userCreated: boolean;
 }
 
 export type VariableInformation = EntityVariableInformation | IntVariableInformation;
@@ -54,6 +55,19 @@ export class Processor {
         new SelectorArgument("tag", "__is_running", false),
         new SelectorArgument("limit", new Range(1, 1), false)
     ], SelectorTarget.Entities);
+    readonly root: AST;
+    readonly namespace: string;
+    readonly setupFunctions: string[] = [];
+    readonly tickFunctions: string[] = [];
+    readonly cleanupFunctions: string[] = [];
+    fn = new FunctionManager();
+    _offsetX = 0;
+    private autoNameIncr = 0;
+
+    constructor(root: AST, namespace: string) {
+        this.root = root;
+        this.namespace = namespace;
+    }
 
     static getVariableSelector(variable: VariableInformation) {
         if (variable.type === "entity") {
@@ -72,32 +86,32 @@ export class Processor {
     }
 
     static hasDecorator(anything: WithDecorators, decorator: string) {
-        return anything.decorators.some(it => it.value === decorator);
+        return anything.decorators.some(it => it.name.value === decorator);
+    }
+
+    static getDecorator(anything: WithDecorators, name: string) {
+        if (!this.hasDecorator(anything, name)) throw new Error("Cannot get decorator that does not exist");
+        return anything.decorators.find(it => it.name.value === name);
     }
 
     static isExposed(statement: WithDecorators) {
         return this.hasDecorator(statement, "expose")
     }
 
-    readonly root: AST;
-    readonly namespace: string;
+    static isStdVar(statement: WithDecorators) {
+        return this.hasDecorator(statement, "stdvar");
+    }
 
-    readonly setupFunctions: string[] = [];
-    readonly tickFunctions: string[] = [];
-    readonly cleanupFunctions: string[] = [];
-
-    fn = new FunctionManager();
-
-    constructor(root: AST, namespace: string) {
-        this.root = root;
-        this.namespace = namespace;
+    static getStdVar(statement: WithDecorators) {
+        const decorator = this.getDecorator(statement, "stdvar");
+        const varName = decorator.args.positional[0];
+        if (!varName) throw new Error("stdvar decorator must specify the name as a positional argument");
+        return varName;
     }
 
     process() {
-        this.setupStdVars();
-
         this.setupFunctions.push("__root");
-        this._handleBlock("__root", "__root", this.root, false);
+        this._handleBlock("__root", "__root", this.root);
 
         this.fn.begin("__setup", "__setup");
 
@@ -146,8 +160,6 @@ export class Processor {
             ]));
         }
 
-        this._cleanup(this.fn.getGlobalScope());
-
         this.fn.push(new Command("scoreboard", [
             s("objectives"),
             s("remove"),
@@ -165,27 +177,6 @@ export class Processor {
         ));
     }
 
-    setupStdVars() {
-        const scope = this.fn.getGlobalScope();
-
-        scope.push(
-            {
-                type: "entity",
-                srcName: "PLAYERS",
-                tag: null,
-                selectorOverride: new Selector([], SelectorTarget.EveryPlayer),
-                disableCleanup: true
-            },
-            {
-                type: "entity",
-                srcName: "RANDOM_PLAYER",
-                tag: null,
-                selectorOverride: new Selector([], SelectorTarget.RandomPlayer),
-                disableCleanup: true
-            },
-        )
-    }
-
     _createScore() {
         const name = ObjectiveNameGenerator.generate(16);
 
@@ -199,7 +190,6 @@ export class Processor {
         return name;
     }
 
-    _offsetX = 0;
     _createMarker(name: string) {
         this.fn.push(new Command("summon", [
             s("armor_stand"),
@@ -218,22 +208,7 @@ export class Processor {
         ]));
     }
 
-    _cleanup(scope = this.fn.getCurrentScope()) {
-        this.fn.push(new Comment("Variable cleanup"));
-        for (const variable of scope) {
-            if (variable.disableCleanup) continue;
-
-            this.fn.push(new Command("kill", [
-                Processor.getVariableSelector(variable)
-            ]));
-        }
-
-        if (this.fn.getCurrentScope().length === 0) {
-            this.fn.push(new Comment("(No variables to clean up)"));
-        }
-    }
-
-    _handleBlock(description: string, name: string, {statements}: Block, cleanup = true) {
+    _handleBlock(description: string, name: string, {statements}: Block) {
         const newName = this.fn.begin(description, name);
         let lastStatementResult: VariableInformation = null;
 
@@ -252,8 +227,6 @@ export class Processor {
         }
 
         this.fn.setFunctionVariable(newName, lastStatementResult);
-
-        if (cleanup) this._cleanup();
 
         this.fn.end();
 
@@ -293,6 +266,25 @@ export class Processor {
         return variable;
     }
 
+    getEntityStdVarInfo(srcName: string, name: string): EntityVariableInformation {
+        return {
+            type: "entity",
+            srcName,
+            tag: name,
+            selectorOverride: new Selector([], SelectorTarget.EveryPlayer),
+            userCreated: false
+        };
+    }
+
+    getEntityVarInfo(srcName: string, name: string, userCreated = false): EntityVariableInformation {
+        return {
+            type: "entity",
+            srcName,
+            tag: name,
+            userCreated
+        };
+    }
+
     _handleVariableDeclaration(statement: VariableDeclaration): VariableInformation {
         if (this.fn.hasVariable(statement.name)) throw new Error(`Variable ${statement.name.value} already exists`);
 
@@ -301,19 +293,18 @@ export class Processor {
         switch (statement.varType.value) {
             case "int": {
                 return this._createIntVariable(statement.name.value,
-                    Processor.isExposed(statement) && statement.name.value);
+                    Processor.isExposed(statement) && statement.name.value, undefined, true);
             }
             case "entity": {
                 const name = Processor.isExposed(statement) ? statement.name.value : ObjectiveNameGenerator.generate(32);
+                const stdVar = Processor.isStdVar(statement) ? Processor.getStdVar(statement) : null;
 
                 // we won't actually create anything here.
                 // we will just store the entity tag name for later use
 
-                const variable: EntityVariableInformation = {
-                    type: "entity",
-                    srcName,
-                    tag: name
-                };
+                const variable = stdVar ?
+                    this.getEntityStdVarInfo(srcName, name) :
+                    this.getEntityVarInfo(srcName, name, true);
 
                 this.fn.getCurrentScope().push(variable);
 
@@ -338,9 +329,7 @@ export class Processor {
 
     _handleFunctionCall(statement: FunctionCall) {
         if (hasStdFunc(statement.name.value)) {
-            const res = nativeStd[statement.name.value](this, statement.args);
-            console.log("Std function variable for", statement.name.value, "is", res);
-            return res;
+            return nativeStd[statement.name.value](this, statement.args);
         }
 
         if (this.fn.hasFunctionByDesc(statement.name.value)) {
@@ -383,16 +372,13 @@ export class Processor {
                 Processor.getVariableSelector(result),
                 s(Processor.valueObjective)
             ]));
+
+            this._deleteVariable(result);
         } else {
             // we already know variable is an entity, but typescript doesn't so this will make it
-            if (variable.type !== "entity") throw new Error("How did we get here?");
+            assert(variable.type === "entity");
 
-            // clean up the old value
-            if (!variable.disableCleanup) {
-                this.fn.push(new Command("kill", [Processor.getVariableSelector(variable)]));
-            } else {
-                console.warn("Old value of", variable.srcName, "was not cleaned up, variable may have two values");
-            }
+            this._deleteVariable(variable);
 
             // remove the new variable from its old scope (i.e. move ownership to new variable's scope)
             const oldScope = this.fn.getScope(result);
@@ -496,12 +482,15 @@ export class Processor {
         ]));
         this.fn.endAUPS();
 
+        this._deleteVariable(leftVariable);
+        this._deleteVariable(rightVariable);
+
         this.fn.enableAdvancedUPS(false);
 
         return variable;
     }
 
-    _createIntVariable(desc: string, name?: string, value?: number) {
+    _createIntVariable(desc: string, name?: string, value?: number, userCreated = false) {
         if (!name) name = desc + "_" + ObjectiveNameGenerator.generate(32);
 
         // we need to create a marker here which will be used later to store the variable
@@ -511,7 +500,8 @@ export class Processor {
         const variable: IntVariableInformation = {
             type: "int",
             srcName: desc,
-            score: name
+            score: name,
+            userCreated
         };
 
         this.fn.getCurrentScope().push(variable);
@@ -550,7 +540,23 @@ export class Processor {
         }
     }
 
+    autoName(base: string) {
+        return `__${this.fn.getFunctionDesc()}_${this.autoNameIncr++}__${base}`;
+    }
+
+    _deleteVariable(variable: VariableInformation, force = false) {
+        if (!force && variable.userCreated) return;
+
+        this.fn.push(new Command("kill", [
+            Processor.getVariableSelector(variable)
+        ]));
+    }
+
     private _evaluateMaths(expr: Maths) {
+        console.log("Evaluate maths:", expr, "in", this.fn.getFunctionDesc());
+
+        this.fn.push(new Comment("Evaluating maths expression"));
+
         this.fn.enableAdvancedUPS();
 
         this.fn.beginAUPS();
@@ -596,6 +602,9 @@ export class Processor {
             s(Processor.valueObjective)
         ]));
 
+        this._deleteVariable(left);
+        this._deleteVariable(right);
+
         return output;
     }
 
@@ -632,11 +641,6 @@ export class Processor {
             case MathsOperation.Remainder:
                 return left % right;
         }
-    }
-
-    private autoNameIncr = 0;
-    autoName(base: string) {
-        return `__${this.fn.getFunctionDesc()}_${this.autoNameIncr++}__${base}`;
     }
 }
 

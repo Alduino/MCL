@@ -12,7 +12,9 @@ CoordinateValue := relative={'~' _? pos=Int?} | local={'^' _? pos=Int?} | absolu
 Coordinate := '<' _? x=CoordinateValue _? ',' _? y=CoordinateValue _? ',' _? z=CoordinateValue _? '>'
 
 IdentifierList := list={val=Identifier _? ',' _?}* _? last=Identifier
-Decorator := '#\[' items=IdentifierList '\]'
+DecoratorItem := name=Identifier _? args={'\(' _? args=ArgumentsList _? '\)'}?
+DecoratorList := first=DecoratorItem _? list={',' _? item=DecoratorItem _?}*
+Decorator := '#\[' _? items=DecoratorList _? '\]'
 DecoratorPart := decorator=Decorator _B?
 
 VariableDeclaration := decorator=DecoratorPart? 'var' _ name=Identifier _? ':' _? type=Identifier

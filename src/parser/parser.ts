@@ -9,7 +9,9 @@
 * CoordinateValue := relative={'~' _? pos=Int?} | local={'^' _? pos=Int?} | absolute=Int
 * Coordinate := '<' _? x=CoordinateValue _? ',' _? y=CoordinateValue _? ',' _? z=CoordinateValue _? '>'
 * IdentifierList := list={val=Identifier _? ',' _?}* _? last=Identifier
-* Decorator := '#\[' items=IdentifierList '\]'
+* DecoratorItem := name=Identifier _? args={'\(' _? args=ArgumentsList _? '\)'}?
+* DecoratorList := first=DecoratorItem _? list={',' _? item=DecoratorItem _?}*
+* Decorator := '#\[' _? items=DecoratorList _? '\]'
 * DecoratorPart := decorator=Decorator _B?
 * VariableDeclaration := decorator=DecoratorPart? 'var' _ name=Identifier _? ':' _? type=Identifier
 * VariableInit := decl=VariableDeclaration _? '=' _? value={FunctionCall | Expression}
@@ -75,6 +77,10 @@ export enum ASTKinds {
     Coordinate = "Coordinate",
     IdentifierList = "IdentifierList",
     IdentifierList_$0 = "IdentifierList_$0",
+    DecoratorItem = "DecoratorItem",
+    DecoratorItem_$0 = "DecoratorItem_$0",
+    DecoratorList = "DecoratorList",
+    DecoratorList_$0 = "DecoratorList_$0",
     Decorator = "Decorator",
     DecoratorPart = "DecoratorPart",
     VariableDeclaration = "VariableDeclaration",
@@ -206,9 +212,27 @@ export interface IdentifierList_$0 {
     kind: ASTKinds.IdentifierList_$0;
     val: Identifier;
 }
+export interface DecoratorItem {
+    kind: ASTKinds.DecoratorItem;
+    name: Identifier;
+    args: Nullable<DecoratorItem_$0>;
+}
+export interface DecoratorItem_$0 {
+    kind: ASTKinds.DecoratorItem_$0;
+    args: ArgumentsList;
+}
+export interface DecoratorList {
+    kind: ASTKinds.DecoratorList;
+    first: DecoratorItem;
+    list: DecoratorList_$0[];
+}
+export interface DecoratorList_$0 {
+    kind: ASTKinds.DecoratorList_$0;
+    item: DecoratorItem;
+}
 export interface Decorator {
     kind: ASTKinds.Decorator;
-    items: IdentifierList;
+    items: DecoratorList;
 }
 export interface DecoratorPart {
     kind: ASTKinds.DecoratorPart;
@@ -689,14 +713,81 @@ export class Parser {
                 return $$res;
             })();
     }
+    public matchDecoratorItem($$dpth: number, $$cr?: ErrorTracker): Nullable<DecoratorItem> {
+        return this.runner<DecoratorItem>($$dpth,
+            () => {
+                let $scope$name: Nullable<Identifier>;
+                let $scope$args: Nullable<Nullable<DecoratorItem_$0>>;
+                let $$res: Nullable<DecoratorItem> = null;
+                if (true
+                    && ($scope$name = this.matchIdentifier($$dpth + 1, $$cr)) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                    && (($scope$args = this.matchDecoratorItem_$0($$dpth + 1, $$cr)) || true)
+                ) {
+                    $$res = {kind: ASTKinds.DecoratorItem, name: $scope$name, args: $scope$args};
+                }
+                return $$res;
+            })();
+    }
+    public matchDecoratorItem_$0($$dpth: number, $$cr?: ErrorTracker): Nullable<DecoratorItem_$0> {
+        return this.runner<DecoratorItem_$0>($$dpth,
+            () => {
+                let $scope$args: Nullable<ArgumentsList>;
+                let $$res: Nullable<DecoratorItem_$0> = null;
+                if (true
+                    && this.regexAccept(String.raw`(?:\()`, $$dpth + 1, $$cr) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                    && ($scope$args = this.matchArgumentsList($$dpth + 1, $$cr)) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                    && this.regexAccept(String.raw`(?:\))`, $$dpth + 1, $$cr) !== null
+                ) {
+                    $$res = {kind: ASTKinds.DecoratorItem_$0, args: $scope$args};
+                }
+                return $$res;
+            })();
+    }
+    public matchDecoratorList($$dpth: number, $$cr?: ErrorTracker): Nullable<DecoratorList> {
+        return this.runner<DecoratorList>($$dpth,
+            () => {
+                let $scope$first: Nullable<DecoratorItem>;
+                let $scope$list: Nullable<DecoratorList_$0[]>;
+                let $$res: Nullable<DecoratorList> = null;
+                if (true
+                    && ($scope$first = this.matchDecoratorItem($$dpth + 1, $$cr)) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                    && ($scope$list = this.loop<DecoratorList_$0>(() => this.matchDecoratorList_$0($$dpth + 1, $$cr), true)) !== null
+                ) {
+                    $$res = {kind: ASTKinds.DecoratorList, first: $scope$first, list: $scope$list};
+                }
+                return $$res;
+            })();
+    }
+    public matchDecoratorList_$0($$dpth: number, $$cr?: ErrorTracker): Nullable<DecoratorList_$0> {
+        return this.runner<DecoratorList_$0>($$dpth,
+            () => {
+                let $scope$item: Nullable<DecoratorItem>;
+                let $$res: Nullable<DecoratorList_$0> = null;
+                if (true
+                    && this.regexAccept(String.raw`(?:,)`, $$dpth + 1, $$cr) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                    && ($scope$item = this.matchDecoratorItem($$dpth + 1, $$cr)) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                ) {
+                    $$res = {kind: ASTKinds.DecoratorList_$0, item: $scope$item};
+                }
+                return $$res;
+            })();
+    }
     public matchDecorator($$dpth: number, $$cr?: ErrorTracker): Nullable<Decorator> {
         return this.runner<Decorator>($$dpth,
             () => {
-                let $scope$items: Nullable<IdentifierList>;
+                let $scope$items: Nullable<DecoratorList>;
                 let $$res: Nullable<Decorator> = null;
                 if (true
                     && this.regexAccept(String.raw`(?:#\[)`, $$dpth + 1, $$cr) !== null
-                    && ($scope$items = this.matchIdentifierList($$dpth + 1, $$cr)) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
+                    && ($scope$items = this.matchDecoratorList($$dpth + 1, $$cr)) !== null
+                    && ((this.match_($$dpth + 1, $$cr)) || true)
                     && this.regexAccept(String.raw`(?:\])`, $$dpth + 1, $$cr) !== null
                 ) {
                     $$res = {kind: ASTKinds.Decorator, items: $scope$items};

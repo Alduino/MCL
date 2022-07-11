@@ -1,7 +1,10 @@
 // note that names of variables and functions are by default mangled,
 // to disable this add the #[expose] decorator
 
-var init_timer: int = 20 * 30 // 5 minutes
+#[stdvar("entity.players.all")]
+var all_players: entity
+
+var init_timer: int = 20 * 60 * 5 // 5 minutes
 var countdown_start: int = 20 * 11 // 10 second countdown
 
 var ticks_left: int = init_timer
@@ -14,7 +17,7 @@ var game_running: int
 #[expose] var player_two: entity
 
 fn swap() {
-    say(to=PLAYERS, "Swapping!")
+    say(to=all_players, "Swapping!")
 
     // summon an armor stand at player_one as temp
     var swap_marker: entity = execute(at=player_one) {
@@ -26,24 +29,47 @@ fn swap() {
 
     // teleport player two to swap marker
     execute(at=swap_marker) { teleport(player_two, <~, ~, ~>) }
+
+    delete(swap_marker)
 }
 
 #[tick]
 fn tick() {
     if (game_running == 1) {
-        ticks_left = ticks_left - 1
+        var player_one_dead: int = is_dead(player_one)
+        var player_two_dead: int = is_dead(player_two)
 
-        if (ticks_left < countdown_start) {
-            var ticks_left_mod: int = ticks_left % 20
-            if (ticks_left_mod < 1) {
-                say(to=PLAYERS, "Swapping in ", ticks_left / 20, "s")
-            }
-        }
+        if (player_one_dead == 1, {
+            say(to=all_players, player_two, " wins!")
+            game_running = 0
+        }, {
+            if (player_two_dead == 1, {
+                say(to=all_players, player_one, " wins!")
+                game_running = 0
+            }, {
+                if (ticks_left == init_timer) {
+                    say(to=all_players, "Swapping in 5 minutes")
+                }
 
-        if (ticks_left < 1) {
-            ticks_left = init_timer
-            swap()
-        }
+                ticks_left = ticks_left - 1
+
+                if (ticks_left < countdown_start) {
+                    var ticks_left_mod: int = ticks_left % 20
+                    if (ticks_left_mod < 1) {
+                        say(to=all_players, "Swapping in ", ticks_left / 20, "s")
+                    }
+                    delete(ticks_left_mod)
+                }
+
+                if (ticks_left < 1) {
+                    ticks_left = init_timer
+                    swap()
+                }
+            })
+        })
+
+        delete(player_one_dead)
+        delete(player_two_dead)
     }
 }
 
@@ -53,13 +79,16 @@ fn setup() {
     kill(player_one)
     kill(player_two)
 
-    say(to=PLAYERS, "Run /tag [PLAYER NAME] player_one on one player")
-    say(to=PLAYERS, "and /tag [PLAYER NAME] player_two on the other.")
-    say(to=PLAYERS, "Then set the value scoreboard for player game_running to 1 to start.")
-    say(to=PLAYERS, "Oh and hi, ", RANDOM_PLAYER, "!")
+    say(to=all_players, "Run /tag [PLAYER NAME] player_one on one player")
+    say(to=all_players, "and /tag [PLAYER NAME] player_two on the other.")
+    say(to=all_players, "Then set the value scoreboard for player game_running to 1 to start.")
 }
 
 #[cleanup]
 fn cleanup() {
-    say(to=PLAYERS, "Unloading")
+    say(to=all_players, "Unloading")
+    delete(init_timer)
+    delete(countdown_start)
+    delete(ticks_left)
+    delete(game_running)
 }

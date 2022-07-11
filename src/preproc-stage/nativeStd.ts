@@ -1,7 +1,7 @@
 import {EntityVariableInformation, Processor, s, VariableInformation} from "./process";
 import ArgumentList from "../parser/ast-structure/ArgumentList";
 import Argument from "../pregen-structure/Argument";
-import {Command} from "../pregen-structure/PreGen";
+import {Command, Comment} from "../pregen-structure/PreGen";
 import Nbt from "../pregen-structure/nbt/Nbt";
 import NbtString from "../pregen-structure/nbt/NbtString";
 import NbtObject from "../pregen-structure/nbt/NbtObject";
@@ -16,6 +16,7 @@ import CoordinateType from "../pregen-structure/coord/CoordinateType";
 import NbtChild from "../pregen-structure/nbt/NbtChild";
 import NbtNumber, {NumberType} from "../pregen-structure/nbt/NbtNumber";
 import ObjectiveNameGenerator from "./ObjectiveNameGenerator";
+import {Block} from "../parser/ast-structure/root-types";
 
 const nativeStd: {
     [key: string]: (processor: Processor, args: ArgumentList) => VariableInformation | null
@@ -75,6 +76,21 @@ const nativeStd: {
         return null;
     },
 
+    delete(processor: Processor, args: ArgumentList) {
+        if (args.positional.length !== 1) throw new Error("delete expects (identifier)");
+
+        const identifier = args.positional[0];
+
+        if (identifier.type !== "identifier") throw new Error("delete(identifier) must be an identifier");
+
+        const variable = processor.fn.getVariable(identifier);
+
+        processor.fn.push(new Comment(`delete(${identifier.value})`));
+        processor._deleteVariable(variable, true);
+
+        return null;
+    },
+
     say(processor: Processor, args: ArgumentList) {
         if (!Object.keys(args.named).includes("to")) throw new Error("say requires argument `to`");
         const to = args.named["to"];
@@ -86,6 +102,8 @@ const nativeStd: {
             if (variable.type !== "entity") throw new Error("say(to) must reference an entity");
             selector = Processor.getVariableSelector(variable);
         } else throw new Error("say(to) must be a selector");
+
+        const variableToDelete: VariableInformation[] = [];
 
         const components = args.positional.map(arg => {
             if (arg.type === "Maths" || arg.type === "Comparison") {
@@ -103,6 +121,7 @@ const nativeStd: {
                 });
             } else if (arg.type === "identifier") {
                 const variable = processor.fn.getVariable(arg);
+                variableToDelete.push(variable);
 
                 if (variable.type === "entity") {
                     return new NbtObject({
@@ -127,22 +146,30 @@ const nativeStd: {
             ]))
         ]));
 
+        for (const variable of variableToDelete) processor._deleteVariable(variable);
+
         return null;
     },
 
     if(processor: Processor, args: ArgumentList) {
         // must have two positional arguments, the comparison and the block
-        if (args.positional.length !== 2) throw new Error("if expects (comparison, block)");
+        if (args.positional.length !== 2 && args.positional.length !== 3) {
+            throw new Error("if expects (comparison, if block, else block?)");
+        }
 
         const comparison = args.positional[0];
         if (comparison.type !== "Comparison") throw new Error("if(comparison) must be a comparison");
 
-        const block = args.positional[1];
-        if (block.type !== "block") throw new Error("if(block) must be a block");
+        const ifBlock = args.positional[1];
+        if (ifBlock.type !== "block") throw new Error("if(if block) must be a block");
+
+        const elseBlock = args.positional[2];
+        if (elseBlock && elseBlock.type !== "block") throw new Error("if(else block) must be a block when defined");
 
         const result = processor._handleComparison(comparison);
 
-        const {name: fn} = processor._handleBlock(processor.fn.getFunctionDesc() + "__if_handler", null, block);
+        const {name: ifFn} = processor._handleBlock(processor.fn.getFunctionDesc() + "__if_handler", null, ifBlock);
+        const elseFn = elseBlock && processor._handleBlock(processor.fn.getFunctionDesc() + "__else_handler", null, elseBlock as Block).name;
 
         processor.fn.push(new Command("execute", [
             s("if"),
@@ -154,8 +181,25 @@ const nativeStd: {
             ]),
             s("run"),
             s("function"),
-            s(`${processor.namespace}:${fn}`)
+            s(`${processor.namespace}:${ifFn}`)
         ]));
+
+        if (elseFn) {
+            processor.fn.push(new Command("execute", [
+                s("unless"),
+                s("entity"),
+                Processor.getVariableSelector(result).extend([
+                    new SelectorArgument("scores", new ScoreboardSelectorArgument({
+                        [Processor.valueObjective]: new Range(1, 1)
+                    }))
+                ]),
+                s("run"),
+                s("function"),
+                s(`${processor.namespace}:${elseFn}`)
+            ]));
+        }
+
+        processor._deleteVariable(result);
 
         return null;
     },
@@ -184,7 +228,8 @@ const nativeStd: {
         const variable: EntityVariableInformation = {
             type: "entity",
             srcName: name,
-            tag: name + "_" + ObjectiveNameGenerator.generate(32)
+            tag: name + "_" + ObjectiveNameGenerator.generate(32),
+            userCreated: true
         };
 
         processor.fn.getCurrentScope().push(variable);
@@ -239,6 +284,28 @@ const nativeStd: {
         }
 
         return null;
+    },
+
+    is_dead(processor, args) {
+        if (args.positional.length !== 1) throw new Error("is_dead expects (entity)");
+
+        const arg = args.positional[0];
+
+        if (arg.type !== "identifier" || processor.fn.getVariable(arg).type !== "entity")
+            throw new Error("is_dead(entity) must be an entity");
+
+        const variable = processor.fn.getVariable(arg);
+        const resultVariable = processor._createIntVariable(`is_dead_${arg.value}`);
+
+        processor.fn.push(new Command("execute", [
+            s("unless"),
+            s("entity"),
+            Processor.getVariableSelector(variable),
+            s("run"),
+            processor.getIntVarSetter(resultVariable, 1)
+        ]));
+
+        return resultVariable;
     }
 };
 export default nativeStd;

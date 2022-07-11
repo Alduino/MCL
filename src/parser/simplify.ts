@@ -1,10 +1,11 @@
 import {
+    ArgumentsList as PegArgumentList,
     Assignment as PegAssignment,
     ASTKinds,
     Block as PegBlock,
     Comparison as PegComparison,
     Coordinate as PegCoordinate,
-    CoordinateValue as PegCoordinateValue,
+    CoordinateValue as PegCoordinateValue, DecoratorItem,
     DecoratorPart,
     Expression as PegExpression,
     FunctionCall as PegFunctionCall,
@@ -14,6 +15,7 @@ import {
     MainProgram,
     Maths as PegMaths,
     NamedArgument as PegNamedArgument,
+    Argument as PegArgument,
     Program,
     Program_$0_1,
     Statement as PegStatement,
@@ -32,6 +34,7 @@ import VariableDeclaration from "./ast-structure/VariableDeclaration";
 import FunctionDeclaration from "./ast-structure/FunctionDeclaration";
 import Assignment from "./ast-structure/Assignment";
 import Decorator from "./ast-structure/Decorator";
+import ArgumentList from "./ast-structure/ArgumentList";
 
 export default function simplify(src: MainProgram): AST {
     return loadProgAsBlock(src.prog);
@@ -53,12 +56,20 @@ function loadIdentifier(src: PegIdentifier): Identifier {
     };
 }
 
+function loadDecorator(src: DecoratorItem): Decorator {
+    return {
+        type: "Decorator",
+        name: loadIdentifier(src.name),
+        args: src.args ? loadArguments(src.args.args) : createEmptyArguments()
+    };
+}
+
 function loadDecorators(src?: DecoratorPart): Decorator[] {
     if (src == null) return [];
 
     return [
-        ...src.decorator.items.list.map(it => loadIdentifier(it.val)),
-        loadIdentifier(src.decorator.items.last)
+        ...src.decorator.items.list.map(it => loadDecorator(it.item)),
+        loadDecorator(src.decorator.items.first)
     ];
 }
 
@@ -198,22 +209,37 @@ function loadArgument(src: PegExpression | PegBlock) {
         loadProgAsBlock(src.program);
 }
 
-function loadFunctionCall(src: PegFunctionCall): FunctionCall {
-    const allArgs = [...src.args.list.map(v => v.arg), src.args.last, src.lastFnArg]
-        .filter(v => v != null);
+function loadArguments(src: PegArgumentList, extraArg?: PegArgument): ArgumentList {
+    const allArgs = [
+        ...src.list.map(v => v.arg),
+        src.last,
+        extraArg
+    ].filter(el => !!el);
 
+    return {
+        type: "ArgumentList",
+        named: Object.fromEntries(allArgs
+            .filter(v => typeof v !== "string" && v.kind === ASTKinds.NamedArgument)
+            .map((v: PegNamedArgument) => [v.name.value, loadArgument(v.value)])),
+        positional: allArgs
+            .filter(v => typeof v === "string" || v.kind !== ASTKinds.NamedArgument)
+            .map(loadArgument)
+    };
+}
+
+function createEmptyArguments(): ArgumentList {
+    return {
+        type: "ArgumentList",
+        named: {},
+        positional: []
+    };
+}
+
+function loadFunctionCall(src: PegFunctionCall): FunctionCall {
     return {
         type: "FunctionCall",
         name: loadIdentifier(src.fn),
-        args: {
-            type: "ArgumentList",
-            named: Object.fromEntries(allArgs
-                .filter(v => typeof v !== "string" && v.kind === ASTKinds.NamedArgument)
-                .map((v: PegNamedArgument) => [v.name.value, loadArgument(v.value)])),
-            positional: allArgs
-                .filter(v => typeof v === "string" || v.kind !== ASTKinds.NamedArgument)
-                .map(loadArgument)
-        }
+        args: loadArguments(src.args, src.lastFnArg)
     };
 }
 

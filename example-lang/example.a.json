@@ -2,6 +2,36 @@
   "type": "block",
   "statements": [
     {
+      "type": "VariableDeclaration",
+      "decorators": [
+        {
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "stdvar"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": [
+              {
+                "type": "string",
+                "value": "entity.players.all"
+              }
+            ]
+          }
+        }
+      ],
+      "name": {
+        "type": "identifier",
+        "value": "all_players"
+      },
+      "varType": {
+        "type": "identifier",
+        "value": "entity"
+      }
+    },
+    {
       "type": "VariableInit",
       "decorators": [],
       "name": {
@@ -20,8 +50,16 @@
         },
         "operation": 2,
         "right": {
-          "type": "int",
-          "value": 30
+          "type": "Maths",
+          "left": {
+            "type": "int",
+            "value": 60
+          },
+          "operation": 2,
+          "right": {
+            "type": "int",
+            "value": 5
+          }
         }
       }
     },
@@ -69,8 +107,16 @@
       "type": "VariableDeclaration",
       "decorators": [
         {
-          "type": "identifier",
-          "value": "expose"
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "expose"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": []
+          }
         }
       ],
       "name": {
@@ -86,8 +132,16 @@
       "type": "VariableDeclaration",
       "decorators": [
         {
-          "type": "identifier",
-          "value": "expose"
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "expose"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": []
+          }
         }
       ],
       "name": {
@@ -103,8 +157,16 @@
       "type": "VariableDeclaration",
       "decorators": [
         {
-          "type": "identifier",
-          "value": "expose"
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "expose"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": []
+          }
         }
       ],
       "name": {
@@ -137,7 +199,7 @@
               "named": {
                 "to": {
                   "type": "identifier",
-                  "value": "PLAYERS"
+                  "value": "all_players"
                 }
               },
               "positional": [
@@ -314,6 +376,23 @@
                 }
               ]
             }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "delete"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "swap_marker"
+                }
+              ]
+            }
           }
         ]
       }
@@ -322,8 +401,16 @@
       "type": "FunctionDeclaration",
       "decorators": [
         {
-          "type": "identifier",
-          "value": "tick"
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "tick"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": []
+          }
         }
       ],
       "name": {
@@ -359,21 +446,60 @@
                   "type": "block",
                   "statements": [
                     {
-                      "type": "Assignment",
+                      "type": "VariableInit",
+                      "decorators": [],
                       "name": {
                         "type": "identifier",
-                        "value": "ticks_left"
+                        "value": "player_one_dead"
+                      },
+                      "varType": {
+                        "type": "identifier",
+                        "value": "int"
                       },
                       "value": {
-                        "type": "Maths",
-                        "left": {
+                        "type": "FunctionCall",
+                        "name": {
                           "type": "identifier",
-                          "value": "ticks_left"
+                          "value": "is_dead"
                         },
-                        "operation": 1,
-                        "right": {
-                          "type": "int",
-                          "value": 1
+                        "args": {
+                          "type": "ArgumentList",
+                          "named": {},
+                          "positional": [
+                            {
+                              "type": "identifier",
+                              "value": "player_one"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "VariableInit",
+                      "decorators": [],
+                      "name": {
+                        "type": "identifier",
+                        "value": "player_two_dead"
+                      },
+                      "varType": {
+                        "type": "identifier",
+                        "value": "int"
+                      },
+                      "value": {
+                        "type": "FunctionCall",
+                        "name": {
+                          "type": "identifier",
+                          "value": "is_dead"
+                        },
+                        "args": {
+                          "type": "ArgumentList",
+                          "named": {},
+                          "positional": [
+                            {
+                              "type": "identifier",
+                              "value": "player_two"
+                            }
+                          ]
                         }
                       }
                     },
@@ -391,41 +517,59 @@
                             "type": "Comparison",
                             "left": {
                               "type": "identifier",
-                              "value": "ticks_left"
+                              "value": "player_one_dead"
                             },
-                            "comparison": 6,
+                            "comparison": 1,
                             "right": {
-                              "type": "identifier",
-                              "value": "countdown_start"
+                              "type": "int",
+                              "value": 1
                             }
                           },
                           {
                             "type": "block",
                             "statements": [
                               {
-                                "type": "VariableInit",
-                                "decorators": [],
+                                "type": "FunctionCall",
                                 "name": {
                                   "type": "identifier",
-                                  "value": "ticks_left_mod"
+                                  "value": "say"
                                 },
-                                "varType": {
-                                  "type": "identifier",
-                                  "value": "int"
-                                },
-                                "value": {
-                                  "type": "Maths",
-                                  "left": {
-                                    "type": "identifier",
-                                    "value": "ticks_left"
+                                "args": {
+                                  "type": "ArgumentList",
+                                  "named": {
+                                    "to": {
+                                      "type": "identifier",
+                                      "value": "all_players"
+                                    }
                                   },
-                                  "operation": 4,
-                                  "right": {
-                                    "type": "int",
-                                    "value": 20
-                                  }
+                                  "positional": [
+                                    {
+                                      "type": "identifier",
+                                      "value": "player_two"
+                                    },
+                                    {
+                                      "type": "string",
+                                      "value": " wins!"
+                                    }
+                                  ]
                                 }
                               },
+                              {
+                                "type": "Assignment",
+                                "name": {
+                                  "type": "identifier",
+                                  "value": "game_running"
+                                },
+                                "value": {
+                                  "type": "int",
+                                  "value": 0
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "block",
+                            "statements": [
                               {
                                 "type": "FunctionCall",
                                 "name": {
@@ -440,9 +584,9 @@
                                       "type": "Comparison",
                                       "left": {
                                         "type": "identifier",
-                                        "value": "ticks_left_mod"
+                                        "value": "player_two_dead"
                                       },
-                                      "comparison": 6,
+                                      "comparison": 1,
                                       "right": {
                                         "type": "int",
                                         "value": 1
@@ -462,29 +606,296 @@
                                             "named": {
                                               "to": {
                                                 "type": "identifier",
-                                                "value": "PLAYERS"
+                                                "value": "all_players"
                                               }
                                             },
                                             "positional": [
                                               {
-                                                "type": "string",
-                                                "value": "Swapping in "
+                                                "type": "identifier",
+                                                "value": "player_one"
                                               },
                                               {
-                                                "type": "Maths",
+                                                "type": "string",
+                                                "value": " wins!"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "Assignment",
+                                          "name": {
+                                            "type": "identifier",
+                                            "value": "game_running"
+                                          },
+                                          "value": {
+                                            "type": "int",
+                                            "value": 0
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "block",
+                                      "statements": [
+                                        {
+                                          "type": "FunctionCall",
+                                          "name": {
+                                            "type": "identifier",
+                                            "value": "if"
+                                          },
+                                          "args": {
+                                            "type": "ArgumentList",
+                                            "named": {},
+                                            "positional": [
+                                              {
+                                                "type": "Comparison",
                                                 "left": {
                                                   "type": "identifier",
                                                   "value": "ticks_left"
                                                 },
-                                                "operation": 3,
+                                                "comparison": 1,
                                                 "right": {
-                                                  "type": "int",
-                                                  "value": 20
+                                                  "type": "identifier",
+                                                  "value": "init_timer"
                                                 }
                                               },
                                               {
-                                                "type": "string",
-                                                "value": "s"
+                                                "type": "block",
+                                                "statements": [
+                                                  {
+                                                    "type": "FunctionCall",
+                                                    "name": {
+                                                      "type": "identifier",
+                                                      "value": "say"
+                                                    },
+                                                    "args": {
+                                                      "type": "ArgumentList",
+                                                      "named": {
+                                                        "to": {
+                                                          "type": "identifier",
+                                                          "value": "all_players"
+                                                        }
+                                                      },
+                                                      "positional": [
+                                                        {
+                                                          "type": "string",
+                                                          "value": "Swapping in 5 minutes"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "Assignment",
+                                          "name": {
+                                            "type": "identifier",
+                                            "value": "ticks_left"
+                                          },
+                                          "value": {
+                                            "type": "Maths",
+                                            "left": {
+                                              "type": "identifier",
+                                              "value": "ticks_left"
+                                            },
+                                            "operation": 1,
+                                            "right": {
+                                              "type": "int",
+                                              "value": 1
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "FunctionCall",
+                                          "name": {
+                                            "type": "identifier",
+                                            "value": "if"
+                                          },
+                                          "args": {
+                                            "type": "ArgumentList",
+                                            "named": {},
+                                            "positional": [
+                                              {
+                                                "type": "Comparison",
+                                                "left": {
+                                                  "type": "identifier",
+                                                  "value": "ticks_left"
+                                                },
+                                                "comparison": 6,
+                                                "right": {
+                                                  "type": "identifier",
+                                                  "value": "countdown_start"
+                                                }
+                                              },
+                                              {
+                                                "type": "block",
+                                                "statements": [
+                                                  {
+                                                    "type": "VariableInit",
+                                                    "decorators": [],
+                                                    "name": {
+                                                      "type": "identifier",
+                                                      "value": "ticks_left_mod"
+                                                    },
+                                                    "varType": {
+                                                      "type": "identifier",
+                                                      "value": "int"
+                                                    },
+                                                    "value": {
+                                                      "type": "Maths",
+                                                      "left": {
+                                                        "type": "identifier",
+                                                        "value": "ticks_left"
+                                                      },
+                                                      "operation": 4,
+                                                      "right": {
+                                                        "type": "int",
+                                                        "value": 20
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "FunctionCall",
+                                                    "name": {
+                                                      "type": "identifier",
+                                                      "value": "if"
+                                                    },
+                                                    "args": {
+                                                      "type": "ArgumentList",
+                                                      "named": {},
+                                                      "positional": [
+                                                        {
+                                                          "type": "Comparison",
+                                                          "left": {
+                                                            "type": "identifier",
+                                                            "value": "ticks_left_mod"
+                                                          },
+                                                          "comparison": 6,
+                                                          "right": {
+                                                            "type": "int",
+                                                            "value": 1
+                                                          }
+                                                        },
+                                                        {
+                                                          "type": "block",
+                                                          "statements": [
+                                                            {
+                                                              "type": "FunctionCall",
+                                                              "name": {
+                                                                "type": "identifier",
+                                                                "value": "say"
+                                                              },
+                                                              "args": {
+                                                                "type": "ArgumentList",
+                                                                "named": {
+                                                                  "to": {
+                                                                    "type": "identifier",
+                                                                    "value": "all_players"
+                                                                  }
+                                                                },
+                                                                "positional": [
+                                                                  {
+                                                                    "type": "string",
+                                                                    "value": "Swapping in "
+                                                                  },
+                                                                  {
+                                                                    "type": "Maths",
+                                                                    "left": {
+                                                                      "type": "identifier",
+                                                                      "value": "ticks_left"
+                                                                    },
+                                                                    "operation": 3,
+                                                                    "right": {
+                                                                      "type": "int",
+                                                                      "value": 20
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "type": "string",
+                                                                    "value": "s"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "FunctionCall",
+                                                    "name": {
+                                                      "type": "identifier",
+                                                      "value": "delete"
+                                                    },
+                                                    "args": {
+                                                      "type": "ArgumentList",
+                                                      "named": {},
+                                                      "positional": [
+                                                        {
+                                                          "type": "identifier",
+                                                          "value": "ticks_left_mod"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "type": "FunctionCall",
+                                          "name": {
+                                            "type": "identifier",
+                                            "value": "if"
+                                          },
+                                          "args": {
+                                            "type": "ArgumentList",
+                                            "named": {},
+                                            "positional": [
+                                              {
+                                                "type": "Comparison",
+                                                "left": {
+                                                  "type": "identifier",
+                                                  "value": "ticks_left"
+                                                },
+                                                "comparison": 6,
+                                                "right": {
+                                                  "type": "int",
+                                                  "value": 1
+                                                }
+                                              },
+                                              {
+                                                "type": "block",
+                                                "statements": [
+                                                  {
+                                                    "type": "Assignment",
+                                                    "name": {
+                                                      "type": "identifier",
+                                                      "value": "ticks_left"
+                                                    },
+                                                    "value": {
+                                                      "type": "identifier",
+                                                      "value": "init_timer"
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "FunctionCall",
+                                                    "name": {
+                                                      "type": "identifier",
+                                                      "value": "swap"
+                                                    },
+                                                    "args": {
+                                                      "type": "ArgumentList",
+                                                      "named": {},
+                                                      "positional": []
+                                                    }
+                                                  }
+                                                ]
                                               }
                                             ]
                                           }
@@ -503,51 +914,32 @@
                       "type": "FunctionCall",
                       "name": {
                         "type": "identifier",
-                        "value": "if"
+                        "value": "delete"
                       },
                       "args": {
                         "type": "ArgumentList",
                         "named": {},
                         "positional": [
                           {
-                            "type": "Comparison",
-                            "left": {
-                              "type": "identifier",
-                              "value": "ticks_left"
-                            },
-                            "comparison": 6,
-                            "right": {
-                              "type": "int",
-                              "value": 1
-                            }
-                          },
+                            "type": "identifier",
+                            "value": "player_one_dead"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "FunctionCall",
+                      "name": {
+                        "type": "identifier",
+                        "value": "delete"
+                      },
+                      "args": {
+                        "type": "ArgumentList",
+                        "named": {},
+                        "positional": [
                           {
-                            "type": "block",
-                            "statements": [
-                              {
-                                "type": "Assignment",
-                                "name": {
-                                  "type": "identifier",
-                                  "value": "ticks_left"
-                                },
-                                "value": {
-                                  "type": "identifier",
-                                  "value": "init_timer"
-                                }
-                              },
-                              {
-                                "type": "FunctionCall",
-                                "name": {
-                                  "type": "identifier",
-                                  "value": "swap"
-                                },
-                                "args": {
-                                  "type": "ArgumentList",
-                                  "named": {},
-                                  "positional": []
-                                }
-                              }
-                            ]
+                            "type": "identifier",
+                            "value": "player_two_dead"
                           }
                         ]
                       }
@@ -564,8 +956,16 @@
       "type": "FunctionDeclaration",
       "decorators": [
         {
-          "type": "identifier",
-          "value": "setup"
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "setup"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": []
+          }
         }
       ],
       "name": {
@@ -620,7 +1020,7 @@
               "named": {
                 "to": {
                   "type": "identifier",
-                  "value": "PLAYERS"
+                  "value": "all_players"
                 }
               },
               "positional": [
@@ -642,7 +1042,7 @@
               "named": {
                 "to": {
                   "type": "identifier",
-                  "value": "PLAYERS"
+                  "value": "all_players"
                 }
               },
               "positional": [
@@ -664,43 +1064,13 @@
               "named": {
                 "to": {
                   "type": "identifier",
-                  "value": "PLAYERS"
+                  "value": "all_players"
                 }
               },
               "positional": [
                 {
                   "type": "string",
                   "value": "Then set the value scoreboard for player game_running to 1 to start."
-                }
-              ]
-            }
-          },
-          {
-            "type": "FunctionCall",
-            "name": {
-              "type": "identifier",
-              "value": "say"
-            },
-            "args": {
-              "type": "ArgumentList",
-              "named": {
-                "to": {
-                  "type": "identifier",
-                  "value": "PLAYERS"
-                }
-              },
-              "positional": [
-                {
-                  "type": "string",
-                  "value": "Oh and hi, "
-                },
-                {
-                  "type": "identifier",
-                  "value": "RANDOM_PLAYER"
-                },
-                {
-                  "type": "string",
-                  "value": "!"
                 }
               ]
             }
@@ -712,8 +1082,16 @@
       "type": "FunctionDeclaration",
       "decorators": [
         {
-          "type": "identifier",
-          "value": "cleanup"
+          "type": "Decorator",
+          "name": {
+            "type": "identifier",
+            "value": "cleanup"
+          },
+          "args": {
+            "type": "ArgumentList",
+            "named": {},
+            "positional": []
+          }
         }
       ],
       "name": {
@@ -734,13 +1112,81 @@
               "named": {
                 "to": {
                   "type": "identifier",
-                  "value": "PLAYERS"
+                  "value": "all_players"
                 }
               },
               "positional": [
                 {
                   "type": "string",
                   "value": "Unloading"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "delete"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "init_timer"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "delete"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "countdown_start"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "delete"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "ticks_left"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionCall",
+            "name": {
+              "type": "identifier",
+              "value": "delete"
+            },
+            "args": {
+              "type": "ArgumentList",
+              "named": {},
+              "positional": [
+                {
+                  "type": "identifier",
+                  "value": "game_running"
                 }
               ]
             }

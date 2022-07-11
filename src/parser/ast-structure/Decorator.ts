@@ -1,4 +1,8 @@
 import {Identifier} from "./root-types";
+import ArgumentList from "./ArgumentList";
 
-type Decorator = Identifier;
-export default Decorator;
+export default interface Decorator {
+    type: "Decorator";
+    name: Identifier;
+    args: ArgumentList;
+}
